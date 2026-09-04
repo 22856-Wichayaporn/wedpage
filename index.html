@@ -3,105 +3,408 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>หน้าแรก | Pam's Futuristic Rainbow Portfolio</title>
+
+    <title>Rainbow Cyber Portfolio | วิชญาพร อภิชัย</title>
+
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <meta name="description"
+          content="เว็บไซต์ Portfolio ของ วิชญาพร อภิชัย นักเรียนชั้นมัธยมศึกษาปีที่ 3/2">
 </head>
+
 <body>
 
-    <!-- Floating Cyber Animal Background Element -->
-    <div class="cyber-animal-container">
-        <svg class="cyber-whale" viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg">
-            <path d="M50,120 Q150,20 300,80 T450,100 Q480,130 420,160 Q300,210 150,170 T50,120 Z" fill="url(#rainbowGlow)" opacity="0.4"/>
-            <circle cx="100" cy="110" r="8" fill="#00ffff" />
-            <path d="M400,100 L460,70 L440,120 Z" fill="#ff00ff" opacity="0.6"/>
-            <defs>
-                <linearGradient id="rainbowGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#ff007f" />
-                    <stop offset="50%" stop-color="#00f0ff" />
-                    <stop offset="100%" stop-color="#7000ff" />
-                </linearGradient>
-            </defs>
-        </svg>
-    </div>
+    <!-- ===============================
+         Animated Background
+    ================================ -->
 
-    <!-- Background Sparkles -->
-    <div class="sparkle sparkle-1"></div>
-    <div class="sparkle sparkle-2"></div>
-    <div class="sparkle sparkle-3"></div>
+    <div class="space-bg"></div>
 
-    <!-- Navigation Bar -->
-    <header class="navbar-header">
-        <nav class="navbar">
-            <div class="logo">
-                <span class="logo-text">PAM</span><span class="logo-dot">.PORTFOLIO</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">หน้าแรก</a></li>
-                <li><a href="profile.html">ประวัติส่วนตัว</a></li>
-                <li><a href="education.html">การศึกษา</a></li>
-                <li><a href="hobby.html">งานอดิเรก</a></li>
-                <li><a href="contact.html">ติดต่อ</a></li>
-            </ul>
+    <div class="stars stars-1"></div>
+    <div class="stars stars-2"></div>
+    <div class="stars stars-3"></div>
+
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <!-- Floating Cyber Animals -->
+    <div class="cyber-animal animal-dragon">🐉</div>
+    <div class="cyber-animal animal-cat">🐈‍⬛</div>
+    <div class="cyber-animal animal-butterfly">🦋</div>
+
+    <!-- ===============================
+         Navigation
+    ================================ -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">✦</span>
+            <span>VICHYAPORN</span>
+        </a>
+
+        <nav class="nav-menu">
+
+            <a href="index.html" class="active">
+                🏠 หน้าแรก
+            </a>
+
+            <a href="profile.html">
+                👤 ประวัติส่วนตัว
+            </a>
+
+            <a href="education.html">
+                🎓 การศึกษา
+            </a>
+
+            <a href="hobby.html">
+                🎮 งานอดิเรก
+            </a>
+
+            <a href="contact.html">
+                📡 ติดต่อ
+            </a>
+
         </nav>
+
     </header>
 
-    <!-- Main Hero Section -->
-    <main class="container">
-        <section class="hero-section">
-            <div class="hero-content">
-                <div class="badge">Welcome to My Digital Realm</div>
-                <h1 class="hero-title">สวัสดีค่ะ! ฉันคือ <br><span class="rainbow-text">วิชญาพร อภิชัย</span></h1>
-                <p class="hero-subtitle">นักเรียนชั้น ม.3/2 โรงเรียนจอมทอง ผู้หลงใหลในโลกของเทคโนโลยี เกม และการเรียนรู้คณิตศาสตร์อย่างไม่มีที่สิ้นสุด</p>
+
+    <!-- ===============================
+         Main
+    ================================ -->
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero section">
+
+            <div class="hero-content reveal">
+
+                <div class="mini-badge">
+                    ✨ WELCOME TO MY DIGITAL WORLD ✨
+                </div>
+
+                <p class="hero-small">
+                    HELLO, I'M
+                </p>
+
+                <h1>
+                    วิชญาพร
+                    <span>อภิชัย</span>
+                </h1>
+
+                <h2>
+                    <span class="rainbow-text">
+                        Student • Creator • Dreamer
+                    </span>
+                </h2>
+
+                <p class="hero-description">
+                    เว็บไซต์แนะนำตัวของนักเรียนชั้นมัธยมศึกษาปีที่ 3/2
+                    ที่ชื่นชอบเทคโนโลยี เกม ดนตรี และการเรียนรู้สิ่งใหม่ ๆ
+                </p>
+
                 <div class="hero-buttons">
-                    <a href="profile.html" class="btn btn-primary">รู้จักฉันมากขึ้น ✨</a>
-                    <a href="hobby.html" class="btn btn-secondary">ดูงานอดิเรกของฉัน 🎮</a>
+
+                    <a href="profile.html" class="btn btn-rainbow">
+                        ✨ รู้จักฉันมากขึ้น
+                    </a>
+
+                    <a href="hobby.html" class="btn btn-glass">
+                        🎮 ดูงานอดิเรกของฉัน
+                    </a>
+
                 </div>
-            </div>
-            <div class="hero-image-wrapper">
-                <div class="glow-bg"></div>
-                <div class="profile-card-3d">
-                    <img src="https://placehold.co/400x400/0d47a1/ffffff?text=Pam+Profile" alt="รูปโปรไฟล์ของวิชญาพร อภิชัย" class="hero-profile-img">
+
+                <div class="hero-stats">
+
+                    <div>
+                        <strong>14</strong>
+                        <span>อายุ</span>
+                    </div>
+
+                    <div>
+                        <strong>M.3/2</strong>
+                        <span>ระดับชั้น</span>
+                    </div>
+
+                    <div>
+                        <strong>∞</strong>
+                        <span>ความฝัน</span>
+                    </div>
+
                 </div>
+
             </div>
+
+
+            <!-- HERO VISUAL -->
+
+            <div class="hero-visual reveal">
+
+                <div class="energy-ring ring-1"></div>
+                <div class="energy-ring ring-2"></div>
+                <div class="energy-ring ring-3"></div>
+
+                <div class="profile-orbit">
+
+                    <div class="orbit-dot dot-1"></div>
+                    <div class="orbit-dot dot-2"></div>
+                    <div class="orbit-dot dot-3"></div>
+
+                    <div class="profile-frame">
+
+                        <img
+                            src="https://placehold.co/600x700/111827/ffffff?text=MY+PROFILE"
+                            alt="รูปโปรไฟล์ของฉัน">
+
+                    </div>
+
+                </div>
+
+                <div class="floating-tag tag-1">
+                    🌈 DREAM
+                </div>
+
+                <div class="floating-tag tag-2">
+                    ⚡ CREATE
+                </div>
+
+                <div class="floating-tag tag-3">
+                    🚀 FUTURE
+                </div>
+
+            </div>
+
         </section>
 
-        <!-- High-tech Highlights -->
-        <section class="quick-stats">
-            <div class="stat-card">
-                <h3>ม.3/2</h3>
-                <p>ระดับชั้นปัจจุบัน</p>
+
+        <!-- HIGHLIGHT -->
+
+        <section class="section">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">01</span>
+
+                <div>
+                    <p class="eyebrow">MY DIGITAL IDENTITY</p>
+
+                    <h2>
+                        <span class="rainbow-text">
+                            More Than Just A Student
+                        </span>
+                    </h2>
+                </div>
+
             </div>
-            <div class="stat-card">
-                <h3>คณิตศาสตร์</h3>
-                <p>วิชาที่โปรดปราน</p>
+
+
+            <div class="feature-grid">
+
+                <article class="feature-card rainbow-border reveal">
+
+                    <div class="feature-icon">
+                        🧠
+                    </div>
+
+                    <h3>เรียนรู้</h3>
+
+                    <p>
+                        สนุกกับการเรียนรู้สิ่งใหม่ ๆ
+                        โดยเฉพาะคณิตศาสตร์และเทคโนโลยี
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card rainbow-border reveal">
+
+                    <div class="feature-icon">
+                        🎮
+                    </div>
+
+                    <h3>ความสนใจ</h3>
+
+                    <p>
+                        ชอบเล่นเกม ดูหนัง ฟังเพลง
+                        และสำรวจโลกดิจิทัล
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card rainbow-border reveal">
+
+                    <div class="feature-icon">
+                        🚀
+                    </div>
+
+                    <h3>อนาคต</h3>
+
+                    <p>
+                        อยากพัฒนาตัวเองและสร้างผลงาน
+                        ที่น่าสนใจในอนาคต
+                    </p>
+
+                </article>
+
             </div>
-            <div class="stat-card">
-                <h3>Roblox & Illslick</h3>
-                <p>เกมและเพลงสุดโปรด</p>
-            </div>
+
         </section>
+
+
+        <!-- CTA -->
+
+        <section class="cta-section section reveal">
+
+            <div class="cta-card">
+
+                <div class="cta-glow"></div>
+
+                <p class="eyebrow">
+                    READY TO EXPLORE?
+                </p>
+
+                <h2>
+                    เข้ามารู้จักโลกของฉัน
+                    <span class="rainbow-text">กันเถอะ ✨</span>
+                </h2>
+
+                <p>
+                    Portfolio เล็ก ๆ ของนักเรียนคนหนึ่ง
+                    ที่เต็มไปด้วยความสนใจ ความฝัน และจินตนาการ
+                </p>
+
+                <a href="profile.html" class="btn btn-rainbow">
+                    🚀 เริ่มสำรวจ Portfolio
+                </a>
+
+            </div>
+
+        </section>
+
     </main>
 
-    <!-- Footer -->
-    <footer class="main-footer">
-        <div class="footer-container">
-            <div class="footer-info">
-                <h3>วิชญาพร อภิชัย (แพม)</h3>
-                <p>นักเรียนชั้นมัธยมศึกษาปีที่ 3/2 โรงเรียนจอมทอง จ.เชียงใหม่</p>
-            </div>
-            <div class="footer-links">
-                <a href="index.html">หน้าแรก</a>
-                <a href="profile.html">ประวัติส่วนตัว</a>
-                <a href="education.html">การศึกษา</a>
-                <a href="hobby.html">งานอดิเรก</a>
-                <a href="contact.html">ติดต่อ</a>
-            </div>
+
+    <!-- ===============================
+         Footer
+    ================================ -->
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+            ✦ VICHYAPORN
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Wichayaporn Apichai. All Rights Reserved. Created for Computer Project.</p>
+
+        <p>
+            วิชญาพร อภิชัย • ม.3/2
+        </p>
+
+        <div class="footer-links">
+
+            <a href="index.html">หน้าแรก</a>
+            <a href="profile.html">ประวัติ</a>
+            <a href="education.html">การศึกษา</a>
+            <a href="hobby.html">งานอดิเรก</a>
+            <a href="contact.html">ติดต่อ</a>
+
         </div>
+
+        <p class="copyright">
+            © 2026 Rainbow Cyber Student Portfolio
+        </p>
+
     </footer>
+
+
+    <!-- Hover Sound -->
+
+    <script>
+        let audioContext;
+
+        function playHoverSound() {
+
+            try {
+
+                audioContext =
+                    audioContext ||
+                    new (window.AudioContext ||
+                    window.webkitAudioContext)();
+
+                const oscillator =
+                    audioContext.createOscillator();
+
+                const gain =
+                    audioContext.createGain();
+
+                oscillator.frequency.value = 700;
+
+                gain.gain.setValueAtTime(
+                    0.025,
+                    audioContext.currentTime
+                );
+
+                gain.gain.exponentialRampToValueAtTime(
+                    0.001,
+                    audioContext.currentTime + 0.08
+                );
+
+                oscillator.connect(gain);
+                gain.connect(audioContext.destination);
+
+                oscillator.start();
+                oscillator.stop(
+                    audioContext.currentTime + 0.08
+                );
+
+            } catch (error) {}
+
+        }
+
+        document
+            .querySelectorAll("a, button, .feature-card")
+            .forEach(element => {
+
+                element.addEventListener(
+                    "mouseenter",
+                    playHoverSound
+                );
+
+            });
+
+
+        const revealElements =
+            document.querySelectorAll(".reveal");
+
+        const observer =
+            new IntersectionObserver(
+                entries => {
+
+                    entries.forEach(entry => {
+
+                        if (entry.isIntersecting) {
+
+                            entry.target.classList.add("show");
+
+                        }
+
+                    });
+
+                },
+                {
+                    threshold: 0.12
+                }
+            );
+
+        revealElements.forEach(
+            element => observer.observe(element)
+        );
+
+    </script>
 
 </body>
 </html>
