@@ -3,20 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>หน้าแรก | Pam Wichayaporn Portfolio</title>
+    <title>หน้าแรก | Pam's Futuristic Rainbow Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="space-bg"></div>
-    <div class="stars"></div>
-    <div class="floating-animal whale">🐋</div>
-    <div class="floating-animal space-cat">🐱‍🚀</div>
 
-    <header class="navbar">
-        <div class="logo">PAM<span>.PORTFOLIO</span></div>
-        <nav>
-            <ul>
+    <!-- Floating Cyber Animal Background Element -->
+    <div class="cyber-animal-container">
+        <svg class="cyber-whale" viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50,120 Q150,20 300,80 T450,100 Q480,130 420,160 Q300,210 150,170 T50,120 Z" fill="url(#rainbowGlow)" opacity="0.4"/>
+            <circle cx="100" cy="110" r="8" fill="#00ffff" />
+            <path d="M400,100 L460,70 L440,120 Z" fill="#ff00ff" opacity="0.6"/>
+            <defs>
+                <linearGradient id="rainbowGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ff007f" />
+                    <stop offset="50%" stop-color="#00f0ff" />
+                    <stop offset="100%" stop-color="#7000ff" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
+
+    <!-- Background Sparkles -->
+    <div class="sparkle sparkle-1"></div>
+    <div class="sparkle sparkle-2"></div>
+    <div class="sparkle sparkle-3"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar-header">
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-text">PAM</span><span class="logo-dot">.PORTFOLIO</span>
+            </div>
+            <ul class="nav-links">
                 <li><a href="index.html" class="active">หน้าแรก</a></li>
                 <li><a href="profile.html">ประวัติส่วนตัว</a></li>
                 <li><a href="education.html">การศึกษา</a></li>
@@ -26,62 +46,62 @@
         </nav>
     </header>
 
+    <!-- Main Hero Section -->
     <main class="container">
         <section class="hero-section">
             <div class="hero-content">
-                <span class="badge">ยินดีต้อนรับสู่เวิลด์ของเเพม ✨</span>
-                <h1 class="rainbow-text">สวัสดีค่ะ, ฉันชื่อ <br>วิชญาพร อภิชัย</h1>
-                <p class="hero-desc">นักเรียนชั้นมัธยมศึกษาปีที่ 3/2 โรงเรียนจอมทอง ผู้หลงใหลในคณิตศาสตร์ เกม Roblox เพลง Illslick และโลกของเทคโนโลยี</p>
+                <div class="badge">Welcome to My Digital Realm</div>
+                <h1 class="hero-title">สวัสดีค่ะ! ฉันคือ <br><span class="rainbow-text">วิชญาพร อภิชัย</span></h1>
+                <p class="hero-subtitle">นักเรียนชั้น ม.3/2 โรงเรียนจอมทอง ผู้หลงใหลในโลกของเทคโนโลยี เกม และการเรียนรู้คณิตศาสตร์อย่างไม่มีที่สิ้นสุด</p>
                 <div class="hero-buttons">
-                    <a href="profile.html" class="btn btn-primary">รู้จักฉันมากขึ้น</a>
-                    <a href="hobby.html" class="btn btn-outline">ดูงานอดิเรกของฉัน</a>
+                    <a href="profile.html" class="btn btn-primary">รู้จักฉันมากขึ้น ✨</a>
+                    <a href="hobby.html" class="btn btn-secondary">ดูงานอดิเรกของฉัน 🎮</a>
                 </div>
             </div>
             <div class="hero-image-wrapper">
-                <div class="glow-circle"></div>
-                <div class="image-card">
-                    <img src="https://placehold.co/400x400/1976D2/FFFFFF/png?text=PAM+PROFILE" alt="รูปโปรไฟล์ของวิชญาพร อภิชัย">
+                <div class="glow-bg"></div>
+                <div class="profile-card-3d">
+                    <img src="https://placehold.co/400x400/0d47a1/ffffff?text=Pam+Profile" alt="รูปโปรไฟล์ของวิชญาพร อภิชัย" class="hero-profile-img">
                 </div>
             </div>
         </section>
 
+        <!-- High-tech Highlights -->
         <section class="quick-stats">
-            <div class="stat-card">
-                <h3>14</h3>
-                <p>อายุ (ปี)</p>
-            </div>
             <div class="stat-card">
                 <h3>ม.3/2</h3>
                 <p>ระดับชั้นปัจจุบัน</p>
             </div>
             <div class="stat-card">
-                <h3>เชียงใหม่</h3>
-                <p>จังหวัดบ้านเกิด</p>
+                <h3>คณิตศาสตร์</h3>
+                <p>วิชาที่โปรดปราน</p>
             </div>
             <div class="stat-card">
-                <h3>100%</h3>
-                <p>ความตั้งใจเรียนรู้</p>
+                <h3>Roblox & Illslick</h3>
+                <p>เกมและเพลงสุดโปรด</p>
             </div>
         </section>
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="main-footer">
         <div class="footer-container">
             <div class="footer-info">
                 <h3>วิชญาพร อภิชัย (แพม)</h3>
-                <p>นักเรียนชั้น ม.3/2 โรงเรียนจอมทอง จังหวัดเชียงใหม่</p>
+                <p>นักเรียนชั้นมัธยมศึกษาปีที่ 3/2 โรงเรียนจอมทอง จ.เชียงใหม่</p>
             </div>
             <div class="footer-links">
                 <a href="index.html">หน้าแรก</a>
-                <a href="profile.html">ประวัติ</a>
+                <a href="profile.html">ประวัติส่วนตัว</a>
                 <a href="education.html">การศึกษา</a>
                 <a href="hobby.html">งานอดิเรก</a>
                 <a href="contact.html">ติดต่อ</a>
             </div>
         </div>
-        <div class="copyright">
-            &copy; 2026 Wichayaporn Apichai. All Rights Reserved. Designed with Rainbow Cosmic Magic ✨
+        <div class="footer-bottom">
+            <p>&copy; 2026 Wichayaporn Apichai. All Rights Reserved. Created for Computer Project.</p>
         </div>
     </footer>
+
 </body>
 </html>
