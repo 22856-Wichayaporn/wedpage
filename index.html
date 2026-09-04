@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>วิชญาพร อภิชัย | Modern Student Portfolio</title>
+    <title>Pam's Galaxy Portfolio | หน้าแรก</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="bg-glow-1"></div>
-    <div class="bg-glow-2"></div>
-    <div class="bg-glow-3"></div>
+
+    <div class="space-bg">
+        <div class="star star1">✨</div>
+        <div class="star star2">⭐</div>
+        <div class="star star3">✨</div>
+        <div class="floating-animal animal1">🐱‍🚀</div>
+        <div class="floating-animal animal2">🐋✨</div>
+        <div class="floating-animal animal3">🦄🌌</div>
+    </div>
 
     <header>
         <nav class="navbar">
-            <a href="index.html" class="logo">
-                <span>PAM</span><span class="logo-badge">PORTFOLIO</span>
-            </a>
+            <div class="logo">PAM<span>.GALAXY</span></div>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">หน้าแรก</a></li>
                 <li><a href="profile.html">ประวัติส่วนตัว</a></li>
@@ -26,71 +31,49 @@
         </nav>
     </header>
 
-    <main>
-        <section class="hero-container fade-in">
-            <div class="hero-text">
-                <span class="hero-tag">✨ Welcome to my World</span>
-                <h1 class="hero-title">สวัสดีค่ะ! ฉันคือ <br><span class="rainbow-text">วิชญาพร อภิชัย</span></h1>
-                <p class="hero-desc">
-                    ยินดีต้อนรับสู่เว็บไซต์ Portfolio ของ "เเพม" นักเรียนชั้นมัธยมศึกษาปีที่ 3/2 โรงเรียนจอมทอง 
-                    ผู้มีความสนใจในด้านเทคโนโลยี คณิตศาสตร์ เกม และการเรียนรู้สิ่งใหม่ๆ อยู่เสมอ!
-                </p>
-                <div class="btn-group">
-                    <a href="profile.html" class="btn btn-primary">รู้จักฉันมากขึ้น ✨</a>
-                    <a href="hobby.html" class="btn btn-secondary">ดูงานอดิเรกของฉัน 🎮</a>
+    <main class="container">
+        <section class="hero-section">
+            <div class="hero-content">
+                <span class="badge">Welcome to my Space Portfolio 🚀</span>
+                <h1 class="rainbow-text">สวัสดี! ฉันชื่อ "แพม"</h1>
+                <p class="hero-subtitle">วิชญาพร อภิชัย | นักเรียนชั้น ม.3/2 โรงเรียนจอมทอง</p>
+                <p class="hero-desc">ยินดีต้อนรับสู่พื้นที่สร้างสรรค์ของฉัน เว็บไซต์นี้รวบรวมประวัติ ผลงาน ความคิด และสิ่งที่ฉันสนใจในโลกเทคโนโลยีและคณิตศาสตร์!</p>
+                <div class="cta-buttons">
+                    <a href="profile.html" class="btn btn-primary">รู้จักฉันมากขึ้น</a>
+                    <a href="hobby.html" class="btn btn-secondary">ดูงานอดิเรกของฉัน</a>
                 </div>
             </div>
             <div class="hero-image-wrapper">
-                <div class="profile-avatar-container">
-                    <div class="profile-glow-ring"></div>
-                    <img src="https://placehold.co/400x400/1e1035/ffffff?text=PAM+Profile" alt="รูปโปรไฟล์ของวิชญาพร อภิชัย" class="profile-img">
-                </div>
+                <div class="profile-glow-ring"></div>
+                <img src="https://placehold.co/400x400/0d47a1/ffffff?text=PAM+PROFILE" alt="รูปโปรไฟล์ของวิชญาพร" class="profile-img">
             </div>
         </section>
 
-        <section style="margin-top: 5rem;">
-            <div class="section-header">
-                <h2 class="section-title">ไฮไลท์สำคัญ <span class="rainbow-text">My Highlights</span></h2>
-                <p class="section-subtitle">ภาพรวมสรุปความเป็นตัวตนและสิ่งที่น่าสนใจของฉัน</p>
+        <section class="highlight-grid">
+            <div class="glass-card stat-card">
+                <div class="card-icon">🎓</div>
+                <h3>การศึกษา</h3>
+                <p>ชั้นมัธยมศึกษาปีที่ 3/2<br>โรงเรียนจอมทอง</p>
             </div>
-
-            <div class="grid-3">
-                <div class="glass-card feature-card">
-                    <div class="icon-box">👤</div>
-                    <h3 class="feature-title">เกี่ยวกับฉัน</h3>
-                    <p class="feature-desc">ชื่อเล่น เเพม อายุ 14 ปี อาศัยอยู่ที่จังหวัดเชียงใหม่ มีความมุ่งมั่นในการเรียนรู้และตั้งใจพัฒนาตนเอง</p>
-                </div>
-                <div class="glass-card feature-card">
-                    <div class="icon-box">🎓</div>
-                    <h3 class="feature-title">การศึกษา</h3>
-                    <p class="feature-desc">ปัจจุบันกำลังศึกษาอยู่ชั้น ม.3/2 โรงเรียนจอมทอง ชื่นชอบวิชาคณิตศาสตร์และการแก้โจทย์ปัญหา</p>
-                </div>
-                <div class="glass-card feature-card">
-                    <div class="icon-box">⭐</div>
-                    <h3 class="feature-title">ความสนใจ</h3>
-                    <p class="feature-desc">ชื่นชอบการเล่นเกม Roblox, เล่นกีฬาแบดมินตัน, ฟังเพลง Illslick และศึกษาเทคโนโลยีใหม่ๆ</p>
-                </div>
+            <div class="glass-card stat-card">
+                <div class="card-icon">📐</div>
+                <h3>วิชาที่ชอบ</h3>
+                <p>คณิตศาสตร์ & เทคโนโลยี<br>เน้นการคิดวิเคราะห์</p>
+            </div>
+            <div class="glass-card stat-card">
+                <div class="card-icon">🎮</div>
+                <h3>กิจกรรมโปรด</h3>
+                <p>เล่นเกม Roblox, ฟังเพลง<br>และเล่นแบดมินตัน</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="footer-container">
-            <div class="footer-info">
-                <h3>วิชญาพร อภิชัย (เเพม)</h3>
-                <p>โครงงานวิชาคอมพิวเตอร์ ชั้นมัธยมศึกษาปีที่ 3/2 | โรงเรียนจอมทอง</p>
-            </div>
-            <ul class="footer-nav">
-                <li><a href="index.html">หน้าแรก</a></li>
-                <li><a href="profile.html">ประวัติส่วนตัว</a></li>
-                <li><a href="education.html">การศึกษา</a></li>
-                <li><a href="hobby.html">งานอดิเรก</a></li>
-                <li><a href="contact.html">ติดต่อ</a></li>
-            </ul>
-            <div class="copyright">
-                &copy; 2026 Wichayaporn Apichai. All Rights Reserved. Designed with Glowing Rainbow Theme.
-            </div>
+        <div class="footer-content">
+            <p><strong>PAM GALAXY PORTFOLIO</strong> | วิชญาพร อภิชัย ชั้น ม.3/2 โรงเรียนจอมทอง</p>
+            <p class="copyright">© 2026 Wichayaporn Apichai. Designed with HTML5 & CSS3.</p>
         </div>
     </footer>
+
 </body>
 </html>
