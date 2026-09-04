@@ -3,84 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>การศึกษา | Pam Wichayaporn Portfolio</title>
+    <title>การศึกษา - Pam Wichayaporn Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="space-bg"></div>
-    <div class="stars"></div>
-    <div class="floating-animal space-cat">🐱‍🚀</div>
+    <div class="stars-container"></div>
+    <div class="cosmic-whale"></div>
 
-    <header class="navbar">
-        <div class="logo">PAM<span>.PORTFOLIO</span></div>
-        <nav>
-            <ul>
-                <li><a href="index.html">หน้าแรก</a></li>
-                <li><a href="profile.html">ประวัติส่วนตัว</a></li>
-                <li><a href="education.html" class="active">การศึกษา</a></li>
-                <li><a href="hobby.html">งานอดิเรก</a></li>
-                <li><a href="contact.html">ติดต่อ</a></li>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-wand-magic-sparkles"></i> PAM<span>.PORTFOLIO</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> หน้าแรก</a></li>
+                <li><a href="profile.html"><i class="fa-solid fa-user"></i> ประวัติส่วนตัว</a></li>
+                <li><a href="education.html" class="active"><i class="fa-solid fa-graduation-cap"></i> การศึกษา</a></li>
+                <li><a href="hobby.html"><i class="fa-solid fa-gamepad"></i> งานอดิเรก</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> ติดต่อ</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="container">
-        <h2 class="page-title rainbow-text">เส้นทางการศึกษา (Education)</h2>
-
-        <div class="education-highlight">
-            <div class="edu-badge">สถาบันปัจจุบัน 🎓</div>
-            <h3>โรงเรียนจอมทอง จังหวัดเชียงใหม่</h3>
-            <p>ระดับชั้นมัธยมศึกษาปีที่ 3 ห้อง 2 | วิชาที่ชอบเป็นพิเศษ: <strong>คณิตศาสตร์ 📐</strong></p>
+    <main class="main-container">
+        <div class="page-header">
+            <h1 class="rainbow-text"><i class="fa-solid fa-graduation-cap"></i> ประวัติการศึกษา</h1>
+            <p>เส้นทางการเรียนรู้และความภาคภูมิใจของฉัน</p>
         </div>
 
-        <section class="timeline">
-            <div class="timeline-item left">
-                <div class="timeline-content">
-                    <span class="year">ระดับประถมศึกษา</span>
-                    <h3>สำเร็จการศึกษาชั้นประถมศึกษา</h3>
-                    <p>ปูพื้นฐานการเรียนรู้ สนุกกับการคำนวณและกิจกรรมของโรงเรียน</p>
+        <section class="timeline-container">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-box">
+                    <span class="timeline-date">ระดับประถมศึกษา</span>
+                    <h3>โรงเรียนประถมศึกษา</h3>
+                    <p>สำเร็จการศึกษาระดับประถมศึกษาด้วยผลการเรียนที่ดีเยี่ยม และปลูกฝังความชอบในวิชาคณิตศาสตร์</p>
                 </div>
             </div>
-            <div class="timeline-item right">
-                <div class="timeline-content">
-                    <span class="year">มัธยมศึกษาตอนต้น (ม.1 - ม.2)</span>
+
+            <div class="timeline-item">
+                <div class="timeline-dot highlight-dot"></div>
+                <div class="timeline-content glass-box glow-border">
+                    <span class="timeline-date">ระดับมัธยมศึกษาตอนต้น</span>
                     <h3>โรงเรียนจอมทอง</h3>
-                    <p>พัฒนาทักษะวิชาการ ทำกิจกรรมกลุ่ม และเริ่มสนใจวิชาเทคโนโลยีคอมพิวเตอร์</p>
-                </div>
-            </div>
-            <div class="timeline-item left">
-                <div class="timeline-content highlight-node">
-                    <span class="year">ปัจจุบัน (มัธยมศึกษาปีที่ 3/2)</span>
-                    <h3>โรงเรียนจอมทอง</h3>
-                    <p>มุ่งมั่นศึกษาต่อ สร้างโครงงานเว็บไซต์ Portfolio สีรุ้งอวกาศ และเตรียมพร้อมสู่ระดับมัธยมปลาย</p>
+                    <p>ปัจจุบันกำลังศึกษาอยู่ในระดับชั้น <strong>มัธยมศึกษาปีที่ 3/2</strong></p>
+                    <div class="edu-tags">
+                        <span><i class="fa-solid fa-star"></i> ห้องเรียน 3/2</span>
+                        <span><i class="fa-solid fa-heart"></i> วิชาชอบ: คณิตศาสตร์</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="table-section">
-            <h3 class="table-title">ตารางสรุปประวัติการศึกษา</h3>
-            <div class="table-wrapper">
-                <table class="custom-table">
+        <section class="table-section margin-top-large">
+            <h2 class="section-title"><i class="fa-solid fa-table-list"></i> ตารางสรุปข้อมูลการศึกษา</h2>
+            <div class="table-wrapper glass-box">
+                <table class="styled-table">
                     <thead>
                         <tr>
                             <th>ระดับการศึกษา</th>
                             <th>สถานศึกษา</th>
-                            <th>สถานะ</th>
-                            <th>วิชาที่โดดเด่น</th>
+                            <th>ชั้นปี</th>
+                            <th>วิชาที่เด่น / ชอบ</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>ประถมศึกษา</td>
-                            <td>โรงเรียนในจังหวัดเชียงใหม่</td>
-                            <td>สำเร็จการศึกษา</td>
+                            <td>โรงเรียนประถม</td>
+                            <td>ป.1 - ป.6</td>
                             <td>คณิตศาสตร์, วิทยาศาสตร์</td>
                         </tr>
-                        <tr>
+                        <tr class="active-row">
                             <td>มัธยมศึกษาตอนต้น</td>
-                            <td>โรงเรียนจอมทอง (ชั้น ม.3/2)</td>
-                            <td>กำลังศึกษาอยู่</td>
+                            <td>โรงเรียนจอมทอง</td>
+                            <td>ม.3/2 (ปัจจุบัน)</td>
                             <td>คณิตศาสตร์, คอมพิวเตอร์</td>
                         </tr>
                     </tbody>
@@ -89,22 +87,22 @@
         </section>
     </main>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-info">
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
                 <h3>วิชญาพร อภิชัย (แพม)</h3>
-                <p>นักเรียนชั้น ม.3/2 โรงเรียนจอมทอง จังหวัดเชียงใหม่</p>
+                <p>นักเรียนชั้นมัธยมศึกษาปีที่ 3/2 โรงเรียนจอมทอง</p>
             </div>
             <div class="footer-links">
                 <a href="index.html">หน้าแรก</a>
-                <a href="profile.html">ประวัติ</a>
+                <a href="profile.html">ประวัติส่วนตัว</a>
                 <a href="education.html">การศึกษา</a>
                 <a href="hobby.html">งานอดิเรก</a>
                 <a href="contact.html">ติดต่อ</a>
             </div>
         </div>
-        <div class="copyright">
-            &copy; 2026 Wichayaporn Apichai. All Rights Reserved.
+        <div class="footer-bottom">
+            <p>&copy; 2026 Wichayaporn Apichai. Designed with Rainbow Galactic Magic.</p>
         </div>
     </footer>
 </body>
