@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ประวัติการศึกษา | วิชญาพร อภิชัย</title>
+    <title>Pam's Galaxy Portfolio | การศึกษา</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="bg-glow-1"></div>
-    <div class="bg-glow-2"></div>
-    <div class="bg-glow-3"></div>
+
+    <div class="space-bg">
+        <div class="star star2">⭐</div>
+        <div class="star star3">✨</div>
+        <div class="floating-animal animal3">🦄🌌</div>
+    </div>
 
     <header>
         <nav class="navbar">
-            <a href="index.html" class="logo">
-                <span>PAM</span><span class="logo-badge">PORTFOLIO</span>
-            </a>
+            <div class="logo">PAM<span>.GALAXY</span></div>
             <ul class="nav-links">
                 <li><a href="index.html">หน้าแรก</a></li>
                 <li><a href="profile.html">ประวัติส่วนตัว</a></li>
@@ -26,81 +28,73 @@
         </nav>
     </header>
 
-    <main>
-        <div class="section-header fade-in">
-            <h1 class="section-title">ประวัติการศึกษา <span class="rainbow-text">Education</span></h1>
-            <p class="section-subtitle">เส้นทางการเรียนรู้และสถิติทางการศึกษาของฉัน</p>
+    <main class="container">
+        <div class="page-header">
+            <h1 class="rainbow-text">ประวัติการศึกษา (Education)</h1>
+            <p>เส้นทางการเรียนรู้และความภาคภูมิใจของฉัน</p>
         </div>
 
-        <section class="grid-3 fade-in" style="margin-bottom: 3rem;">
-            <div class="glass-card feature-card">
-                <div class="icon-box">🏫</div>
-                <h3 class="feature-title">โรงเรียนจอมทอง</h3>
-                <p class="feature-desc">สถาบันการศึกษาปัจจุบันที่บ่มเพาะทักษะและความรู้ความสามารถ</p>
-            </div>
-            <div class="glass-card feature-card">
-                <div class="icon-box">📚</div>
-                <h3 class="feature-title">ระดับชั้น ม.3/2</h3>
-                <p class="feature-desc">ระดับชั้นมัธยมศึกษาปีที่ 3 ห้องเรียนที่มุ่งมั่นตั้งใจเรียน</p>
-            </div>
-            <div class="glass-card feature-card">
-                <div class="icon-box">📐</div>
-                <h3 class="feature-title">วิชาที่ชอบ</h3>
-                <p class="feature-desc"><strong>คณิตศาสตร์</strong> ชอบคำนวณ คิดวิเคราะห์ และการแก้โจทย์ปัญหาเชิงตรรกะ</p>
+        <section class="glass-card edu-highlight-card">
+            <div class="edu-highlight-content">
+                <h2>ปัจจุบันกำลังศึกษาอยู่ที่ 🎓</h2>
+                <h3 class="school-title">โรงเรียนจอมทอง</h3>
+                <div class="edu-tags">
+                    <span class="tag">ระดับชั้น ม.3</span>
+                    <span class="tag">ห้องเรียน 3/2</span>
+                    <span class="tag rainbow-tag">วิชาที่ชอบ: คณิตศาสตร์ 📐</span>
+                </div>
             </div>
         </section>
 
-        <section class="glass-card fade-in" style="margin-bottom: 3rem;">
-            <h2 style="font-size: 1.6rem; margin-bottom: 2rem; color: #00ff87;">⏳ เส้นทางการศึกษา (Educational Timeline)</h2>
+        <section class="timeline-section">
+            <h2 class="section-title rainbow-text">Timeline การศึกษา</h2>
             <div class="timeline">
-                <div class="timeline-item">
-                    <span class="timeline-year">ระดับประถมศึกษา</span>
-                    <h3 style="font-size: 1.2rem; margin: 0.3rem 0;">ระดับประถมศึกษาปีที่ 1 - 6</h3>
-                    <p style="color: var(--text-muted);">ปูพื้นฐานความรู้ด้านการอ่าน การเขียน คำนวณ และการร่วมกิจกรรมโรงเรียน</p>
+                
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <span class="timeline-year">ประถมศึกษา</span>
+                        <h3>จบการศึกษาระดับประถมศึกษา</h3>
+                        <p>ปูพื้นฐานการเรียนรู้ ฝึกฝนทักษะการคิดคำนวณและสร้างความสนใจในวิชาคณิตศาสตร์</p>
+                    </div>
                 </div>
-                <div class="timeline-item">
-                    <span class="timeline-year">ระดับมัธยมศึกษาตอนต้น</span>
-                    <h3 style="font-size: 1.2rem; margin: 0.3rem 0;">โรงเรียนจอมทอง (ชั้น ม.1 - ม.2)</h3>
-                    <p style="color: var(--text-muted);">ศึกษาเรียนรู้วิชาการเข้มข้น พัฒนาทักษะคอมพิวเตอร์และการทํางานร่วมกับผู้อื่น</p>
+
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <span class="timeline-year">มัธยมศึกษาตอนต้น</span>
+                        <h3>โรงเรียนจอมทอง (ชั้น ม.1 - ม.3)</h3>
+                        <p>กำลังศึกษาชั้น ม.3/2 ตั้งใจเรียน พัฒนาทักษะด้านเทคโนโลยี คอมพิวเตอร์ และการแก้โจทย์คณิตศาสตร์</p>
+                    </div>
                 </div>
-                <div class="timeline-item">
-                    <span class="timeline-year">ปัจจุบัน (ปีการศึกษา 2026)</span>
-                    <h3 style="font-size: 1.2rem; margin: 0.3rem 0;">โรงเรียนจอมทอง (ชั้น ม.3/2)</h3>
-                    <p style="color: var(--text-muted);">กำลังศึกษาอยู่ชั้น ม.3/2 มุ่งมั่นเตรียมความพร้อมเพื่อการศึกษาต่อในระดับสูงขึ้น</p>
-                </div>
+
             </div>
         </section>
 
-        <section class="fade-in">
-            <h2 style="font-size: 1.6rem; margin-bottom: 1rem;" class="rainbow-text">📊 ตารางสรุปข้อมูลการศึกษา</h2>
-            <div class="table-wrapper">
-                <table class="styled-table">
+        <section class="glass-card table-section">
+            <h2>ตารางสรุปประวัติการศึกษา</h2>
+            <div class="table-responsive">
+                <table class="edu-table">
                     <thead>
                         <tr>
                             <th>ระดับการศึกษา</th>
                             <th>สถานศึกษา</th>
-                            <th>จังหวัด</th>
+                            <th>ชั้นเรียน</th>
                             <th>สถานะ</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>ประถมศึกษา (ป.1 - ป.6)</td>
-                            <td>โรงเรียนประถมศึกษาในพื้นที่</td>
-                            <td>เชียงใหม่</td>
-                            <td>สำเร็จการศึกษา</td>
+                            <td>ประถมศึกษา</td>
+                            <td>โรงเรียนประถมศึกษา</td>
+                            <td>ป.1 - ป.6</td>
+                            <td><span class="status-badge success">สำเร็จการศึกษา</span></td>
                         </tr>
                         <tr>
-                            <td>มัธยมศึกษาตอนต้น (ม.1 - ม.2)</td>
+                            <td>มัธยมศึกษาตอนต้น</td>
                             <td>โรงเรียนจอมทอง</td>
-                            <td>เชียงใหม่</td>
-                            <td>สำเร็จการศึกษา</td>
-                        </tr>
-                        <tr>
-                            <td>มัธยมศึกษาตอนต้น (ม.3/2)</td>
-                            <td>โรงเรียนจอมทอง</td>
-                            <td>เชียงใหม่</td>
-                            <td>กำลังศึกษา (ปัจจุบัน)</td>
+                            <td>ม.3/2</td>
+                            <td><span class="status-badge active">กำลังศึกษา</span></td>
                         </tr>
                     </tbody>
                 </table>
@@ -109,22 +103,11 @@
     </main>
 
     <footer>
-        <div class="footer-container">
-            <div class="footer-info">
-                <h3>วิชญาพร อภิชัย (เเพม)</h3>
-                <p>โครงงานวิชาคอมพิวเตอร์ ชั้นมัธยมศึกษาปีที่ 3/2 | โรงเรียนจอมทอง</p>
-            </div>
-            <ul class="footer-nav">
-                <li><a href="index.html">หน้าแรก</a></li>
-                <li><a href="profile.html">ประวัติส่วนตัว</a></li>
-                <li><a href="education.html">การศึกษา</a></li>
-                <li><a href="hobby.html">งานอดิเรก</a></li>
-                <li><a href="contact.html">ติดต่อ</a></li>
-            </ul>
-            <div class="copyright">
-                &copy; 2026 Wichayaporn Apichai. All Rights Reserved.
-            </div>
+        <div class="footer-content">
+            <p><strong>PAM GALAXY PORTFOLIO</strong> | วิชญาพร อภิชัย ชั้น ม.3/2 โรงเรียนจอมทอง</p>
+            <p class="copyright">© 2026 Wichayaporn Apichai. Designed with HTML5 & CSS3.</p>
         </div>
     </footer>
+
 </body>
 </html>
