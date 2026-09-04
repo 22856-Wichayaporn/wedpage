@@ -3,86 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>งานอดิเรก | Pam Wichayaporn Portfolio</title>
+    <title>งานอดิเรก - Pam Wichayaporn Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="space-bg"></div>
-    <div class="stars"></div>
-    <div class="floating-animal whale">🐋</div>
+    <div class="stars-container"></div>
+    <div class="cosmic-whale"></div>
 
-    <header class="navbar">
-        <div class="logo">PAM<span>.PORTFOLIO</span></div>
-        <nav>
-            <ul>
-                <li><a href="index.html">หน้าแรก</a></li>
-                <li><a href="profile.html">ประวัติส่วนตัว</a></li>
-                <li><a href="education.html">การศึกษา</a></li>
-                <li><a href="hobby.html" class="active">งานอดิเรก</a></li>
-                <li><a href="contact.html">ติดต่อ</a></li>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-wand-magic-sparkles"></i> PAM<span>.PORTFOLIO</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> หน้าแรก</a></li>
+                <li><a href="profile.html"><i class="fa-solid fa-user"></i> ประวัติส่วนตัว</a></li>
+                <li><a href="education.html"><i class="fa-solid fa-graduation-cap"></i> การศึกษา</a></li>
+                <li><a href="hobby.html" class="active"><i class="fa-solid fa-gamepad"></i> งานอดิเรก</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> ติดต่อ</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="container">
-        <h2 class="page-title rainbow-text">งานอดิเรกและความสนใจ (Hobbies)</h2>
+    <main class="main-container">
+        <div class="page-header">
+            <h1 class="rainbow-text"><i class="fa-solid fa-icons"></i> งานอดิเรกและความสนใจ</h1>
+            <p>สิ่งที่ฉันชื่นชอบและสร้างแรงบันดาลใจในเวลาว่าง</p>
+        </div>
 
         <section class="hobby-grid">
             <div class="hobby-card">
-                <div class="hobby-icon">🎮</div>
+                <div class="hobby-icon-box color-1">
+                    <i class="fa-solid fa-gamepad"></i>
+                </div>
                 <h3>เล่นเกม Roblox</h3>
-                <p>ชอบเล่นเกม Roblox กับเพื่อนๆ เสริมสร้างจินตนาการ การวางแผน และฝึกทักษะการแก้ปัญหาในโลกเสมือนจริง</p>
+                <p>ชอบเล่นเกม Roblox กับเพื่อน ๆ ในเวลาว่าง ช่วยฝึกการแก้ไขปัญหา การทำงานเป็นทีม และสร้างความสนุกสนาน</p>
             </div>
 
             <div class="hobby-card">
-                <div class="hobby-icon">🏸</div>
-                <h3>กีฬา แบดมินตัน</h3>
-                <p>ออกกำลังกายด้วยการเล่นแบดมินตัน ช่วยฝึกสายตา ความไว ร่างกายแข็งแรง และผ่อนคลายจากการเรียน</p>
+                <div class="hobby-icon-box color-2">
+                    <i class="fa-solid fa-shuttlecock"></i>
+                </div>
+                <h3>กีฬาแบดมินตัน</h3>
+                <p>การเล่นแบดมินตันเป็นกีฬาโปรดที่ช่วยให้ออกกำลังกาย เสริมสร้างสุขภาพที่แข็งแรง และฝึกไหวพริบความรวดเร็ว</p>
             </div>
 
             <div class="hobby-card">
-                <div class="hobby-icon">🎧</div>
+                <div class="hobby-icon-box color-3">
+                    <i class="fa-solid fa-music"></i>
+                </div>
                 <h3>ฟังเพลง Illslick</h3>
-                <p>หลงใหลในเสียงเพลง เพลงโปรดคือแนว Illslick ช่วยสร้างแรงบันดาลใจ ผ่อนคลายสมองขณะอ่านหนังสือ</p>
+                <p>หลงใหลในเสียงเพลง โดยเฉพาะผลงานเพลงของ Illslick ที่มีจังหวะและเนื้อเพลงที่มีเอกลักษณ์ ช่วยผ่อนคลายความเครียด</p>
             </div>
 
             <div class="hobby-card">
-                <div class="hobby-icon">🎬</div>
+                <div class="hobby-icon-box color-4">
+                    <i class="fa-solid fa-film"></i>
+                </div>
                 <h3>ดูภาพยนตร์</h3>
-                <p>ชอบชมซีรีส์และภาพยนตร์แนวดราม่า แฟนตาซี และไซไฟ ได้เรียนรู้ภาษาและแนวคิดใหม่ๆ เสมอ</p>
+                <p>ชอบการรับชมภาพยนตร์หลากหลายแนว ทั้งไซไฟ และแอนิเมชัน เพื่อเปิดโลกทัศน์และสัมผัสเรื่องราวใหม่ ๆ</p>
             </div>
 
             <div class="hobby-card">
-                <div class="hobby-icon">💻</div>
+                <div class="hobby-icon-box color-5">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
                 <h3>เทคโนโลยี & เว็บไซต์</h3>
-                <p>สนใจการใช้งานไอที การออกแบบหน้าเว็บ HTML/CSS สีรุ้งแฟนตาซี ให้สวยงามและมีลูกเล่นน่าสนใจ</p>
+                <p>สนใจการสร้างและตกแต่งเว็บไซต์ เรียนรู้ภาษา HTML และ CSS เพื่อสร้างผลงานที่มีสีสันและเป็นเอกลักษณ์</p>
             </div>
 
             <div class="hobby-card">
-                <div class="hobby-icon">📐</div>
+                <div class="hobby-icon-box color-6">
+                    <i class="fa-solid fa-square-root-variable"></i>
+                </div>
                 <h3>คำนวณคณิตศาสตร์</h3>
-                <p>วิชาโปรดคือคณิตศาสตร์ สนุกกับการคิดเลข ฝึกตรรกะ และแก้โจทย์ปัญหารูปแบบต่างๆ</p>
+                <p>สนุกกับการแก้โจทย์คณิตศาสตร์และท้าทายความคิดสร้างสรรค์ด้วยตัวเลขและตรรกะที่น่าสนใจ</p>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-info">
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
                 <h3>วิชญาพร อภิชัย (แพม)</h3>
-                <p>นักเรียนชั้น ม.3/2 โรงเรียนจอมทอง จังหวัดเชียงใหม่</p>
+                <p>นักเรียนชั้นมัธยมศึกษาปีที่ 3/2 โรงเรียนจอมทอง</p>
             </div>
             <div class="footer-links">
                 <a href="index.html">หน้าแรก</a>
-                <a href="profile.html">ประวัติ</a>
+                <a href="profile.html">ประวัติส่วนตัว</a>
                 <a href="education.html">การศึกษา</a>
                 <a href="hobby.html">งานอดิเรก</a>
                 <a href="contact.html">ติดต่อ</a>
             </div>
         </div>
-        <div class="copyright">
-            &copy; 2026 Wichayaporn Apichai. All Rights Reserved.
+        <div class="footer-bottom">
+            <p>&copy; 2026 Wichayaporn Apichai. Designed with Rainbow Galactic Magic.</p>
         </div>
     </footer>
 </body>
