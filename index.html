@@ -3,79 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pam Portfolio - หน้าแรก</title>
+    <title>หน้าแรก - Pam Wichayaporn Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="stars-bg"></div>
-    <div class="space-creature"></div>
+    <div class="stars-container"></div>
+    <div class="cosmic-whale"></div>
 
-    <header>
+    <header class="header">
         <nav class="navbar">
-            <div class="logo">PAM<span>.PORTFOLIO</span></div>
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-wand-magic-sparkles"></i> PAM<span>.PORTFOLIO</span>
+            </a>
             <ul class="nav-links">
-                <li><a href="index.html" class="active">หน้าแรก</a></li>
-                <li><a href="profile.html">ประวัติส่วนตัว</a></li>
-                <li><a href="education.html">การศึกษา</a></li>
-                <li><a href="hobby.html">งานอดิเรก</a></li>
-                <li><a href="contact.html">ติดต่อ</a></li>
+                <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i> หน้าแรก</a></li>
+                <li><a href="profile.html"><i class="fa-solid fa-user"></i> ประวัติส่วนตัว</a></li>
+                <li><a href="education.html"><i class="fa-solid fa-graduation-cap"></i> การศึกษา</a></li>
+                <li><a href="hobby.html"><i class="fa-solid fa-gamepad"></i> งานอดิเรก</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> ติดต่อ</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="main-container">
         <section class="hero-section">
             <div class="hero-content">
-                <span class="badge rainbow-text-glow">✨ WELCOME TO MY UNIVERSE</span>
-                <h1 class="hero-title">สวัสดีค่ะ! ฉันชื่อ <span class="rainbow-text">แพม</span></h1>
-                <h2 class="hero-subtitle">วิชญาพร อภิชัย | นักเรียนชั้น ม.3/2</h2>
-                <p class="hero-description">
-                    ยินดีต้อนรับสู่เว็บไซต์ Portfolio สไตล์ Cosmic Rainbow ของฉัน! 
-                    ฉันชอบเรียนรู้สิ่งใหม่ๆ หลงใหลในวิชาคณิตศาสตร์ และสนุกกับการท่องโลกเทคโนโลยี
+                <div class="badge-sparkle">
+                    <i class="fa-solid fa-star"></i> มัธยมศึกษาปีที่ 3/2 โรงเรียนจอมทอง
+                </div>
+                <h1 class="hero-title">สวัสดีค่ะ! ฉันชื่อ <br><span class="rainbow-text">วิชญาพร อภิชัย</span></h1>
+                <p class="hero-subtitle">
+                    ยินดีต้อนรับสู่พอร์ตโฟลิโอสุดอลังการท่องอวกาศสายรุ้งของ "แพม" ยินดีที่ได้รู้จักทุกคนค่ะ!
                 </p>
                 <div class="hero-buttons">
-                    <a href="profile.html" class="btn btn-primary">รู้จักฉันมากขึ้น</a>
-                    <a href="hobby.html" class="btn btn-outline">ดูงานอดิเรกของฉัน</a>
+                    <a href="profile.html" class="btn btn-primary"><i class="fa-solid fa-sparkles"></i> รู้จักฉันมากขึ้น</a>
+                    <a href="hobby.html" class="btn btn-secondary"><i class="fa-solid fa-heart"></i> ดูงานอดิเรกของฉัน</a>
                 </div>
             </div>
-            <div class="hero-image-container">
-                <div class="glow-circle"></div>
-                <img src="https://placehold.co/400x400/0d47a1/ffffff?text=Pam+Profile" alt="รูปโปรไฟล์ของวิชญาพร อภิชัย" class="hero-img">
+            <div class="hero-image-wrapper">
+                <div class="glowing-ring"></div>
+                <div class="hero-image-card">
+                    <img src="https://placehold.co/400x400/101828/90CAF9?text=Pam+Wichayaporn" alt="รูปโปรไฟล์ของวิชญาพร อภิชัย">
+                </div>
             </div>
         </section>
 
-        <section class="highlight-section">
-            <div class="card-grid">
-                <div class="glass-card spark-card">
-                    <div class="card-icon">🏫</div>
-                    <h3>โรงเรียน</h3>
-                    <p>โรงเรียนจอมทอง เชียงใหม่</p>
-                </div>
-                <div class="glass-card spark-card">
-                    <div class="card-icon">📐</div>
-                    <h3>วิชาที่ชอบ</h3>
-                    <p>คณิตศาสตร์</p>
-                </div>
-                <div class="glass-card spark-card">
-                    <div class="card-icon">🎮</div>
-                    <h3>กิจกรรมโปรด</h3>
-                    <p>เล่นเกม Roblox & แบดมินตัน</p>
-                </div>
+        <section class="quick-highlights">
+            <div class="highlight-card">
+                <i class="fa-solid fa-calculator highlight-icon"></i>
+                <h3>วิชาที่ชอบ</h3>
+                <p>คณิตศาสตร์</p>
+            </div>
+            <div class="highlight-card">
+                <i class="fa-solid fa-map-pin highlight-icon"></i>
+                <h3>จังหวัด</h3>
+                <p>เชียงใหม่</p>
+            </div>
+            <div class="highlight-card">
+                <i class="fa-solid fa-trophy highlight-icon"></i>
+                <h3>นิสัยส่วนตัว</h3>
+                <p>เรียนเก่ง & ขยันเรียนรู้</p>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <div class="footer-content">
-            <p><strong>PAM PORTFOLIO</strong> | วิชญาพร อภิชัย ชั้น ม.3/2</p>
-            <p class="copyright">&copy; 2026 Vichayaporn Aphichai. All Rights Reserved.</p>
+            <div class="footer-brand">
+                <h3>วิชญาพร อภิชัย (แพม)</h3>
+                <p>นักเรียนชั้นมัธยมศึกษาปีที่ 3/2 โรงเรียนจอมทอง</p>
+            </div>
             <div class="footer-links">
-                <a href="index.html">หน้าแรก</a> | 
-                <a href="profile.html">ประวัติส่วนตัว</a> | 
-                <a href="education.html">การศึกษา</a> | 
-                <a href="hobby.html">งานอดิเรก</a> | 
+                <a href="index.html">หน้าแรก</a>
+                <a href="profile.html">ประวัติส่วนตัว</a>
+                <a href="education.html">การศึกษา</a>
+                <a href="hobby.html">งานอดิเรก</a>
                 <a href="contact.html">ติดต่อ</a>
             </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Wichayaporn Apichai. Designed with Rainbow Galactic Magic.</p>
         </div>
     </footer>
 </body>
