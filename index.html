@@ -3,87 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>หน้าแรก - Pam Wichayaporn Portfolio</title>
+    <title>หน้าแรก - Pam's Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="stars-container"></div>
-    <div class="cosmic-whale"></div>
+    <div class="floating-cyber-animal">
+        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 250, 100 C 350, 80 450, 180 420, 280 C 390, 380 280, 420 180, 390 C 80, 360 50, 240 100, 150 C 150, 60 200, 120 250, 100 Z" fill="url(#rainbow-grad)" opacity="0.35"/>
+            <defs>
+                <linearGradient id="rainbow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ff007f" />
+                    <stop offset="25%" stop-color="#7f00ff" />
+                    <stop offset="50%" stop-color="#00d4ff" />
+                    <stop offset="75%" stop-color="#00ff87" />
+                    <stop offset="100%" stop-color="#ff007f" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
 
-    <header class="header">
+    <header>
         <nav class="navbar">
-            <a href="index.html" class="logo">
-                <i class="fa-solid fa-wand-magic-sparkles"></i> PAM<span>.PORTFOLIO</span>
-            </a>
+            <div class="logo">PAM<span>.DEV</span></div>
             <ul class="nav-links">
-                <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i> หน้าแรก</a></li>
-                <li><a href="profile.html"><i class="fa-solid fa-user"></i> ประวัติส่วนตัว</a></li>
-                <li><a href="education.html"><i class="fa-solid fa-graduation-cap"></i> การศึกษา</a></li>
-                <li><a href="hobby.html"><i class="fa-solid fa-gamepad"></i> งานอดิเรก</a></li>
-                <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> ติดต่อ</a></li>
+                <li><a href="index.html" class="active">หน้าแรก</a></li>
+                <li><a href="profile.html">ประวัติส่วนตัว</a></li>
+                <li><a href="education.html">การศึกษา</a></li>
+                <li><a href="hobby.html">งานอดิเรก</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="main-container">
-        <section class="hero-section">
+    <main>
+        <section class="hero-container">
             <div class="hero-content">
-                <div class="badge-sparkle">
-                    <i class="fa-solid fa-star"></i> มัธยมศึกษาปีที่ 3/2 โรงเรียนจอมทอง
-                </div>
-                <h1 class="hero-title">สวัสดีค่ะ! ฉันชื่อ <br><span class="rainbow-text">วิชญาพร อภิชัย</span></h1>
-                <p class="hero-subtitle">
-                    ยินดีต้อนรับสู่พอร์ตโฟลิโอสุดอลังการท่องอวกาศสายรุ้งของ "แพม" ยินดีที่ได้รู้จักทุกคนค่ะ!
-                </p>
-                <div class="hero-buttons">
-                    <a href="profile.html" class="btn btn-primary"><i class="fa-solid fa-sparkles"></i> รู้จักฉันมากขึ้น</a>
-                    <a href="hobby.html" class="btn btn-secondary"><i class="fa-solid fa-heart"></i> ดูงานอดิเรกของฉัน</a>
+                <span class="badge">✨ Welcome to my Cyber Space</span>
+                <h1>สวัสดีค่ะ! ฉันชื่อ <br><span class="rainbow-text">วิชญาพร อภิชัย</span></h1>
+                <p class="subtitle">นักเรียนชั้น ม.3/2 โรงเรียนจอมทอง | ผู้มีความสนใจในด้านเทคโนโลยี คณิตศาสตร์ และการสร้างสรรค์สิ่งใหม่ๆ</p>
+                <div class="cta-group">
+                    <a href="profile.html" class="btn btn-primary">รู้จักฉันมากขึ้น 🚀</a>
+                    <a href="hobby.html" class="btn btn-secondary">ดูงานอดิเรกของฉัน 🎮</a>
                 </div>
             </div>
             <div class="hero-image-wrapper">
                 <div class="glowing-ring"></div>
-                <div class="hero-image-card">
-                    <img src="https://placehold.co/400x400/101828/90CAF9?text=Pam+Wichayaporn" alt="รูปโปรไฟล์ของวิชญาพร อภิชัย">
-                </div>
+                <img src="https://placehold.co/400x400/0d47a1/ffffff?text=PAM+PROFILE" alt="รูปโปรไฟล์ของวิชญาพร อภิชัย" class="profile-img">
             </div>
         </section>
 
-        <section class="quick-highlights">
-            <div class="highlight-card">
-                <i class="fa-solid fa-calculator highlight-icon"></i>
+        <section class="features-grid">
+            <div class="card glass-card">
+                <div class="card-icon">🎓</div>
+                <h3>การศึกษา</h3>
+                <p>ชั้นมัธยมศึกษาปีที่ 3/2 โรงเรียนจอมทอง จ.เชียงใหม่</p>
+            </div>
+            <div class="card glass-card">
+                <div class="card-icon">📐</div>
                 <h3>วิชาที่ชอบ</h3>
-                <p>คณิตศาสตร์</p>
+                <p>มีความชื่นชอบและถนัดในรายวิชาคณิตศาสตร์</p>
             </div>
-            <div class="highlight-card">
-                <i class="fa-solid fa-map-pin highlight-icon"></i>
-                <h3>จังหวัด</h3>
-                <p>เชียงใหม่</p>
-            </div>
-            <div class="highlight-card">
-                <i class="fa-solid fa-trophy highlight-icon"></i>
-                <h3>นิสัยส่วนตัว</h3>
-                <p>เรียนเก่ง & ขยันเรียนรู้</p>
+            <div class="card glass-card">
+                <div class="card-icon">💻</div>
+                <h3>ความสนใจ</h3>
+                <p>หลงใหลในเทคโนโลยีสมัยใหม่ การเล่นเกม และสื่อภาพยนตร์</p>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-brand">
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
                 <h3>วิชญาพร อภิชัย (แพม)</h3>
-                <p>นักเรียนชั้นมัธยมศึกษาปีที่ 3/2 โรงเรียนจอมทอง</p>
+                <p>นักเรียนชั้นมัธยมศึกษาปีที่ 3/2 | โรงเรียนจอมทอง</p>
             </div>
             <div class="footer-links">
                 <a href="index.html">หน้าแรก</a>
-                <a href="profile.html">ประวัติส่วนตัว</a>
+                <a href="profile.html">ประวัติ</a>
                 <a href="education.html">การศึกษา</a>
                 <a href="hobby.html">งานอดิเรก</a>
                 <a href="contact.html">ติดต่อ</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Wichayaporn Apichai. Designed with Rainbow Galactic Magic.</p>
+            <p>&copy; 2026 Vichayaporn Apichai. All Rights Reserved. Computer Science Project.</p>
         </div>
     </footer>
 </body>
