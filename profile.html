@@ -3,87 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ประวัติส่วนตัว | Pam Wichayaporn Portfolio</title>
+    <title>ประวัติส่วนตัว - Pam Wichayaporn Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="space-bg"></div>
-    <div class="stars"></div>
-    <div class="floating-animal whale">🐋</div>
+    <div class="stars-container"></div>
+    <div class="cosmic-whale"></div>
 
-    <header class="navbar">
-        <div class="logo">PAM<span>.PORTFOLIO</span></div>
-        <nav>
-            <ul>
-                <li><a href="index.html">หน้าแรก</a></li>
-                <li><a href="profile.html" class="active">ประวัติส่วนตัว</a></li>
-                <li><a href="education.html">การศึกษา</a></li>
-                <li><a href="hobby.html">งานอดิเรก</a></li>
-                <li><a href="contact.html">ติดต่อ</a></li>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-wand-magic-sparkles"></i> PAM<span>.PORTFOLIO</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> หน้าแรก</a></li>
+                <li><a href="profile.html" class="active"><i class="fa-solid fa-user"></i> ประวัติส่วนตัว</a></li>
+                <li><a href="education.html"><i class="fa-solid fa-graduation-cap"></i> การศึกษา</a></li>
+                <li><a href="hobby.html"><i class="fa-solid fa-gamepad"></i> งานอดิเรก</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> ติดต่อ</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="container">
-        <h2 class="page-title rainbow-text">ประวัติส่วนตัว (Profile)</h2>
-        
-        <section class="profile-grid">
-            <div class="profile-card-left">
-                <div class="avatar-box">
-                    <img src="https://placehold.co/350x350/0D47A1/FFFFFF/png?text=Pam+Photo" alt="รูปโปรไฟล์ของเเพม">
+    <main class="main-container">
+        <div class="page-header">
+            <h1 class="rainbow-text"><i class="fa-solid fa-address-card"></i> ประวัติส่วนตัว</h1>
+            <p>ทําความรู้จักกับ "แพม" วิชญาพร อภิชัย ให้มากขึ้น</p>
+        </div>
+
+        <section class="profile-section-wrapper">
+            <div class="profile-left">
+                <div class="profile-card-main">
+                    <img src="https://placehold.co/350x450/1e1b4b/42A5F5?text=Pam+Profile" alt="รูปโปรไฟล์ของวิชญาพร อภิชัย">
+                    <div class="profile-badge">นักเรียน ม.3/2</div>
                 </div>
-                <h3>วิชญาพร อภิชัย</h3>
-                <p class="tag">ชื่อเล่น: เเพม 💖</p>
             </div>
 
-            <div class="profile-card-right">
-                <h3>ข้อมูลทั่วไป</h3>
-                <div class="info-list">
-                    <div class="info-item">
-                        <strong>อายุ:</strong> 14 ปี
-                    </div>
-                    <div class="info-item">
-                        <strong>วันเกิด:</strong> 14 ธันวาคม 2554 (14/12/2011)
-                    </div>
-                    <div class="info-item">
-                        <strong>จังหวัด:</strong> เชียงใหม่
-                    </div>
-                    <div class="info-item">
-                        <strong>โรงเรียน:</strong> จอมทอง (ระดับชั้น ม.3/2)
-                    </div>
-                    <div class="info-item">
-                        <strong>วิชาที่ชอบ:</strong> คณิตศาสตร์
-                    </div>
-                    <div class="info-item">
-                        <strong>ความสนใจ:</strong> ดูหนัง, ฟังเพลง, เทคโนโลยี
-                    </div>
+            <div class="profile-right">
+                <div class="glass-box">
+                    <h2>ข้อมูลพื้นฐาน</h2>
+                    <ul class="info-list">
+                        <li><strong><i class="fa-solid fa-id-badge"></i> ชื่อ-นามสกุล:</strong> วิชญาพร อภิชัย</li>
+                        <li><strong><i class="fa-solid fa-face-smile"></i> ชื่อเล่น:</strong> แพม</li>
+                        <li><strong><i class="fa-solid fa-cake-candles"></i> อายุ:</strong> 14 ปี</li>
+                        <li><strong><i class="fa-solid fa-calendar-days"></i> วันเกิด:</strong> 14 ธันวาคม 2554 (14/12/2011)</li>
+                        <li><strong><i class="fa-solid fa-location-dot"></i> จังหวัด:</strong> เชียงใหม่</li>
+                        <li><strong><i class="fa-solid fa-school"></i> โรงเรียน:</strong> จอมทอง</li>
+                        <li><strong><i class="fa-solid fa-book-open"></i> ระดับชั้น:</strong> มัธยมศึกษาปีที่ 3/2</li>
+                    </ul>
                 </div>
 
-                <div class="about-me-box">
-                    <h4>เกี่ยวกับฉัน ✨</h4>
-                    <p>สวัสดีค่ะ เเพมเองนะคะ! เป็นคนเรียนเก่ง มีความตั้งใจ สนใจการเรียนรู้สิ่งใหม่ๆ เสมอ ชอบแก้โจทย์คณิตศาสตร์ และชอบผ่อนคลายด้วยการท่องโลกอินเทอร์เน็ต ฟังเพลง Illslick และเล่นเกมกับเพื่อนๆ โครงงานนี้ทำขึ้นเพื่อโชว์ศักยภาพด้านการออกแบบและสร้างเว็บไซต์ค่ะ!</p>
+                <div class="glass-box margin-top">
+                    <h2><i class="fa-solid fa-sparkles"></i> เกี่ยวกับฉัน</h2>
+                    <p class="about-text">
+                        สวัสดีค่ะ ฉันชื่อแพม เป็นคนตั้งใจเรียน เรียนเก่ง มีความสนใจในด้านคณิตศาสตร์และเทคโนโลยีใหม่ ๆ ชอบค้นหาความรู้รอบตัวอยู่เสมอ ในเวลาว่างชอบทำกิจกรรมสนุก ๆ อย่างการเล่นเกม ดูหนัง และฟังเพลง เพื่อเปิดรับแรงบันดาลใจใหม่ ๆ ค่ะ!
+                    </p>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-info">
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
                 <h3>วิชญาพร อภิชัย (แพม)</h3>
-                <p>นักเรียนชั้น ม.3/2 โรงเรียนจอมทอง จังหวัดเชียงใหม่</p>
+                <p>นักเรียนชั้นมัธยมศึกษาปีที่ 3/2 โรงเรียนจอมทอง</p>
             </div>
             <div class="footer-links">
                 <a href="index.html">หน้าแรก</a>
-                <a href="profile.html">ประวัติ</a>
+                <a href="profile.html">ประวัติส่วนตัว</a>
                 <a href="education.html">การศึกษา</a>
                 <a href="hobby.html">งานอดิเรก</a>
                 <a href="contact.html">ติดต่อ</a>
             </div>
         </div>
-        <div class="copyright">
-            &copy; 2026 Wichayaporn Apichai. All Rights Reserved.
+        <div class="footer-bottom">
+            <p>&copy; 2026 Wichayaporn Apichai. Designed with Rainbow Galactic Magic.</p>
         </div>
     </footer>
 </body>
