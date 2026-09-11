@@ -1,75 +1,86 @@
+```html
 <!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pompam Apichai Education">
-    <title>Pompam Apichai | Education</title>
+    <meta name="description" content="ประวัติการศึกษาของวิชญาพร อภิชัย">
+    <title>Education | PAM</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="galaxy"></div>
-    <div class="stars stars-1"></div>
-    <div class="stars stars-2"></div>
+    <div class="galaxy-bg"></div>
 
-    <div class="floating-animal animal-cat">🐱</div>
-    <div class="floating-animal animal-bunny">🐰</div>
-    <div class="floating-animal animal-butterfly">🦋</div>
-    <div class="floating-animal animal-unicorn">🦄</div>
+    <div class="stars">
+        <span>★</span>
+        <span>✦</span>
+        <span>✧</span>
+        <span>★</span>
+        <span>✦</span>
+        <span>✧</span>
+        <span>★</span>
+        <span>✦</span>
+        <span>✧</span>
+    </div>
 
-    <header class="site-header">
-        <nav class="navbar container">
+    <div class="floating-animal animal-one">🦊</div>
+    <div class="floating-animal animal-two">🐨</div>
+    <div class="floating-animal animal-three">🦄</div>
 
-            <a class="logo" href="index.html">
-                <span>✦</span> POMPAM
-            </a>
+    <header class="navbar">
 
-            <div class="nav-links">
-                <a href="index.html">หน้าแรก</a>
-                <a href="profile.html">ประวัติส่วนตัว</a>
-                <a class="active" href="education.html">การศึกษา</a>
-                <a href="hobby.html">งานอดิเรก</a>
-                <a href="contact.html">ติดต่อ</a>
-            </div>
+        <a href="index.html" class="logo">
+            PAM<span>★</span>
+        </a>
 
+        <nav>
+            <a href="index.html">หน้าแรก</a>
+            <a href="profile.html">ประวัติส่วนตัว</a>
+            <a href="education.html" class="active">การศึกษา</a>
+            <a href="hobby.html">งานอดิเรก</a>
+            <a href="contact.html">ติดต่อ</a>
         </nav>
+
     </header>
 
     <main>
 
-        <section class="page-hero container">
+        <section class="page-hero">
 
-            <span class="section-label">02 · EDUCATION</span>
+            <div class="page-tag">🚀 MY LEARNING JOURNEY</div>
 
             <h1>
-                My <span class="gradient-text">Education</span> 🎓
+                เส้นทาง<span>การศึกษา</span>
             </h1>
 
             <p>
-                เส้นทางการเรียนรู้ของฉัน
+                ทุกบทเรียนคืออีกหนึ่งก้าวของการเดินทาง
             </p>
 
         </section>
 
-        <section class="timeline-section container">
+        <section class="timeline-section">
 
             <div class="timeline">
 
                 <div class="timeline-item">
 
-                    <div class="timeline-dot">📚</div>
+                    <div class="timeline-dot">🌱</div>
 
                     <div class="timeline-content">
 
-                        <span class="timeline-year">ELEMENTARY SCHOOL</span>
+                        <span class="timeline-year">
+                            ระดับประถมศึกษา
+                        </span>
 
-                        <h2>ประถมศึกษา</h2>
+                        <h2>เริ่มต้นการเรียนรู้</h2>
 
                         <p>
-                            จุดเริ่มต้นของการเรียนรู้
-                            การสร้างพื้นฐานและค้นหาสิ่งที่ตัวเองสนใจ
+                            ช่วงแรกของเส้นทางการศึกษา
+                            เริ่มเรียนรู้พื้นฐานด้านต่าง ๆ
+                            และค้นหาสิ่งที่ตัวเองชอบ
                         </p>
 
                     </div>
@@ -78,17 +89,19 @@
 
                 <div class="timeline-item">
 
-                    <div class="timeline-dot">🌟</div>
+                    <div class="timeline-dot">⭐</div>
 
                     <div class="timeline-content">
 
-                        <span class="timeline-year">JUNIOR HIGH SCHOOL</span>
+                        <span class="timeline-year">
+                            ระดับมัธยมศึกษาตอนต้น
+                        </span>
 
-                        <h2>มัธยมศึกษาตอนต้น</h2>
+                        <h2>ค้นพบความสนใจ</h2>
 
                         <p>
-                            เริ่มค้นพบความสนใจในวิชาคณิตศาสตร์
-                            เทคโนโลยี เกม และกิจกรรมต่าง ๆ
+                            เริ่มสนใจเทคโนโลยี คอมพิวเตอร์
+                            และกิจกรรมที่ช่วยพัฒนาความคิดสร้างสรรค์
                         </p>
 
                     </div>
@@ -101,19 +114,17 @@
 
                     <div class="timeline-content">
 
-                        <span class="timeline-year">CURRENT · 2026</span>
+                        <span class="timeline-year">
+                            ปัจจุบัน
+                        </span>
 
-                        <h2>โรงเรียนจอมทอง · ม.3/2</h2>
+                        <h2>ม.3/2 • โรงเรียนจอมทอง</h2>
 
                         <p>
-                            ปัจจุบันกำลังศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 3
-                            ห้อง 2 และกำลังเรียนรู้สิ่งใหม่ ๆ
-                            เพื่อเตรียมตัวสำหรับอนาคต
+                            กำลังเรียนชั้นมัธยมศึกษาปีที่ 3/2
+                            พร้อมพัฒนาความรู้และทักษะใหม่ ๆ
+                            เพื่อเตรียมพร้อมสำหรับอนาคต
                         </p>
-
-                        <div class="current-badge">
-                            ✦ CURRENT STUDENT ✦
-                        </div>
 
                     </div>
 
@@ -123,80 +134,89 @@
 
         </section>
 
-        <section class="section container">
+        <section class="education-highlight">
 
             <div class="section-heading">
-                <span class="section-label">MY SCHOOL</span>
-                <h2>ข้อมูลการศึกษา <span class="gradient-text">ของฉัน</span></h2>
+                <p>MY SCHOOL LIFE</p>
+                <h2>ข้อมูล<span>การศึกษา</span></h2>
             </div>
 
-            <div class="education-grid">
+            <div class="highlight-grid">
 
-                <div class="edu-highlight">
-                    <span class="edu-icon">🏫</span>
-                    <span>โรงเรียน</span>
+                <div class="highlight-card">
+                    <span class="highlight-icon">🏫</span>
+                    <small>โรงเรียน</small>
                     <strong>จอมทอง</strong>
                 </div>
 
-                <div class="edu-highlight">
-                    <span class="edu-icon">🎒</span>
-                    <span>ระดับชั้น</span>
+                <div class="highlight-card">
+                    <span class="highlight-icon">🎓</span>
+                    <small>ระดับชั้น</small>
                     <strong>ม.3/2</strong>
                 </div>
 
-                <div class="edu-highlight">
-                    <span class="edu-icon">🧮</span>
-                    <span>วิชาที่ชอบ</span>
+                <div class="highlight-card">
+                    <span class="highlight-icon">🧮</span>
+                    <small>วิชาที่ชอบ</small>
                     <strong>คณิตศาสตร์</strong>
+                </div>
+
+                <div class="highlight-card">
+                    <span class="highlight-icon">💡</span>
+                    <small>ความสนใจ</small>
+                    <strong>เทคโนโลยี</strong>
                 </div>
 
             </div>
 
         </section>
 
-        <section class="section container">
+        <section class="table-section">
 
-            <div class="glass-table">
+            <div class="section-heading">
+                <p>EDUCATION RECORD</p>
+                <h2>ตาราง<span>ประวัติการศึกษา</span></h2>
+            </div>
 
-                <div class="table-title">
-                    <span class="section-label">EDUCATION JOURNEY</span>
-                    <h2>เส้นทางการศึกษา</h2>
-                </div>
+            <div class="table-wrapper">
 
-                <div class="table-wrapper">
+                <table>
 
-                    <table>
+                    <thead>
+                        <tr>
+                            <th>ช่วงการศึกษา</th>
+                            <th>ระดับ</th>
+                            <th>สถานศึกษา</th>
+                            <th>สถานะ</th>
+                        </tr>
+                    </thead>
 
-                        <thead>
-                            <tr>
-                                <th>ช่วงการศึกษา</th>
-                                <th>ระดับ</th>
-                                <th>สถานศึกษา</th>
-                                <th>สถานะ</th>
-                            </tr>
-                        </thead>
+                    <tbody>
 
-                        <tbody>
+                        <tr>
+                            <td>ประถมศึกษา</td>
+                            <td>ประถมศึกษา</td>
+                            <td>โรงเรียนเดิม</td>
+                            <td><span class="status">สำเร็จ</span></td>
+                        </tr>
 
-                            <tr>
-                                <td>ประถมศึกษา</td>
-                                <td>ประถม</td>
-                                <td>โรงเรียน</td>
-                                <td><span class="status">สำเร็จ</span></td>
-                            </tr>
+                        <tr>
+                            <td>มัธยมศึกษาตอนต้น</td>
+                            <td>ม.1 – ม.2</td>
+                            <td>โรงเรียนจอมทอง</td>
+                            <td><span class="status">สำเร็จ</span></td>
+                        </tr>
 
-                            <tr>
-                                <td>มัธยมศึกษาตอนต้น</td>
-                                <td>ม.ต้น</td>
-                                <td>โรงเรียนจอมทอง</td>
-                                <td><span class="status active-status">กำลังศึกษา</span></td>
-                            </tr>
+                        <tr>
+                            <td>ปัจจุบัน</td>
+                            <td>ม.3/2</td>
+                            <td>โรงเรียนจอมทอง</td>
+                            <td><span class="status current-status">กำลังศึกษา</span></td>
+                        </tr>
 
-                        </tbody>
+                    </tbody>
 
-                    </table>
-
-                </div>
+                </table>
 
             </div>
 
@@ -206,12 +226,10 @@
 
     <footer class="footer">
 
-        <div class="container footer-content">
+        <div class="footer-main">
 
             <div>
-                <a class="logo" href="index.html">
-                    <span>✦</span> POMPAM
-                </a>
+                <div class="footer-logo">PAM<span>★</span></div>
                 <p>Rainbow Galaxy Student Portfolio</p>
             </div>
 
@@ -223,13 +241,14 @@
                 <a href="contact.html">ติดต่อ</a>
             </div>
 
-            <div class="copyright">
-                © 2026 Pompam Apichai · M.3/2
-            </div>
+        </div>
 
+        <div class="footer-bottom">
+            <p>© 2026 วิชญาพร อภิชัย | ม.3/2</p>
         </div>
 
     </footer>
 
 </body>
 </html>
+```
