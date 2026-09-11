@@ -32,3 +32,489 @@
     }
 
 }
+/* =========================================================
+   🌌 ULTIMATE RAINBOW GALAXY BACKGROUND
+   ========================================================= */
+
+/* ชั้นแสงสีรุ้งขนาดใหญ่ */
+.galaxy::after {
+    content: "";
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    top: 20%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0, 229, 255, 0.18) 0%,
+            rgba(33, 150, 243, 0.12) 25%,
+            rgba(156, 39, 255, 0.12) 45%,
+            rgba(255, 43, 214, 0.08) 60%,
+            transparent 72%
+        );
+
+    filter: blur(50px);
+
+    animation:
+        galaxyPulse 8s ease-in-out infinite,
+        galaxyDrift 18s ease-in-out infinite alternate;
+}
+
+@keyframes galaxyPulse {
+    0%, 100% {
+        opacity: 0.55;
+        transform: translate(-50%, -50%) scale(0.85);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.15);
+    }
+}
+
+@keyframes galaxyDrift {
+    0% {
+        left: 35%;
+        top: 30%;
+    }
+
+    50% {
+        left: 65%;
+        top: 55%;
+    }
+
+    100% {
+        left: 45%;
+        top: 75%;
+    }
+}
+
+
+/* =========================================================
+   ✨ PARTICLE DUST
+   ========================================================= */
+
+.stars::after {
+    content:
+        "✦  ·   ✧     ·  ✦       ·     ✧  ·      ✦   ·     ✧"
+        "   ·  ✦      ·      ✧   ·   ✦      ·    ✧";
+
+    position: absolute;
+
+    width: 220%;
+    height: 220%;
+
+    top: -20%;
+    left: -20%;
+
+    color: rgba(255,255,255,0.65);
+
+    font-size: 12px;
+    letter-spacing: 32px;
+    line-height: 90px;
+
+    animation:
+        cosmicDust 45s linear infinite;
+
+    opacity: 0.65;
+}
+
+@keyframes cosmicDust {
+    from {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-100px, -250px) rotate(5deg);
+    }
+}
+
+
+/* =========================================================
+   🌈 FLOATING LIGHT ORBS
+   ========================================================= */
+
+body::before,
+body::after {
+    content: "";
+
+    position: fixed;
+
+    width: 260px;
+    height: 260px;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    z-index: -3;
+
+    filter: blur(70px);
+
+    opacity: 0.28;
+}
+
+body::before {
+    top: 10%;
+    left: -100px;
+
+    background:
+        radial-gradient(
+            circle,
+            #00e5ff,
+            #2196f3,
+            transparent 70%
+        );
+
+    animation: lightOrbOne 12s ease-in-out infinite;
+}
+
+body::after {
+    right: -100px;
+    bottom: 5%;
+
+    background:
+        radial-gradient(
+            circle,
+            #ff2bd6,
+            #9c27ff,
+            transparent 70%
+        );
+
+    animation: lightOrbTwo 15s ease-in-out infinite;
+}
+
+@keyframes lightOrbOne {
+
+    0%, 100% {
+        transform: translate(0, 0) scale(0.8);
+    }
+
+    50% {
+        transform: translate(120px, 180px) scale(1.3);
+    }
+}
+
+@keyframes lightOrbTwo {
+
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate(-150px, -180px) scale(1.4);
+    }
+}
+
+
+/* =========================================================
+   ☄️ SHOOTING STARS
+   ========================================================= */
+
+.galaxy {
+    overflow: hidden;
+}
+
+.galaxy .shooting-star {
+    position: absolute;
+
+    width: 3px;
+    height: 3px;
+
+    background: white;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 10px white,
+        0 0 20px #00e5ff;
+
+    animation: shootingStar 5s linear infinite;
+}
+
+
+/* ใช้ pseudo elements เพิ่มดาวตก */
+
+.galaxy::before {
+    animation:
+        galaxyRotate 30s linear infinite,
+        meteorGlow 4s ease-in-out infinite;
+}
+
+@keyframes meteorGlow {
+
+    0%, 100% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+
+/* =========================================================
+   💫 EXTRA FLOATING DECORATION
+   ========================================================= */
+
+.floating-animal {
+    transition:
+        opacity 0.5s ease,
+        filter 0.5s ease;
+}
+
+.floating-animal:hover {
+    opacity: 0.45;
+
+    filter:
+        drop-shadow(0 0 15px #00e5ff)
+        drop-shadow(0 0 30px #ff2bd6);
+
+    transform: scale(1.15);
+}
+
+
+/* =========================================================
+   🌈 RAINBOW BORDER EFFECT
+   ========================================================= */
+
+.feature-card,
+.hobby-card,
+.contact-card,
+.info-box,
+.timeline-content,
+.edu-highlight,
+.about-box,
+.glass-table,
+.quote-card {
+    position: relative;
+}
+
+
+/* เส้นแสงวิ่งรอบ Card */
+
+.feature-card::after,
+.hobby-card::after,
+.contact-card::after,
+.info-box::after,
+.timeline-content::after,
+.edu-highlight::after,
+.about-box::after,
+.glass-table::after,
+.quote-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: -1px;
+
+    border-radius: inherit;
+
+    padding: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(0,229,255,0.8),
+            rgba(156,39,255,0.8),
+            rgba(255,43,214,0.8),
+            transparent
+        );
+
+    background-size: 250% 100%;
+
+    -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+
+    -webkit-mask-composite: xor;
+
+    mask-composite: exclude;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: opacity 0.4s ease;
+
+    animation: borderFlow 4s linear infinite;
+}
+
+.feature-card:hover::after,
+.hobby-card:hover::after,
+.contact-card:hover::after,
+.info-box:hover::after,
+.timeline-content:hover::after,
+.edu-highlight:hover::after,
+.about-box:hover::after,
+.glass-table:hover::after,
+.quote-card:hover::after {
+    opacity: 1;
+}
+
+@keyframes borderFlow {
+    to {
+        background-position: 250% 0;
+    }
+}
+
+
+/* =========================================================
+   ⭐ TWINKLING EFFECT
+   ========================================================= */
+
+.sparkle {
+    animation:
+        sparkle 2s ease-in-out infinite,
+        sparkleRotate 4s linear infinite;
+}
+
+@keyframes sparkleRotate {
+
+    0% {
+        filter: brightness(0.8);
+    }
+
+    50% {
+        filter: brightness(2);
+    }
+
+    100% {
+        filter: brightness(0.8);
+    }
+}
+
+
+/* =========================================================
+   🌌 GLASS GLOW
+   ========================================================= */
+
+.navbar {
+    box-shadow:
+        0 15px 50px rgba(0,0,0,0.4),
+        0 0 30px rgba(33,150,243,0.08),
+        inset 0 1px rgba(255,255,255,0.1);
+}
+
+.navbar::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: inherit;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,0.05),
+            transparent
+        );
+
+    transform: translateX(-100%);
+
+    animation: navbarShine 6s ease-in-out infinite;
+
+    pointer-events: none;
+}
+
+@keyframes navbarShine {
+
+    0%, 35% {
+        transform: translateX(-100%);
+    }
+
+    70%, 100% {
+        transform: translateX(100%);
+    }
+}
+
+
+/* =========================================================
+   🌠 HERO COSMIC GLOW
+   ========================================================= */
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    left: 35%;
+    top: 35%;
+
+    transform: translate(-50%, -50%);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0,229,255,0.08),
+            rgba(156,39,255,0.05),
+            transparent 70%
+        );
+
+    filter: blur(20px);
+
+    pointer-events: none;
+
+    animation: heroGlow 10s ease-in-out infinite alternate;
+}
+
+@keyframes heroGlow {
+
+    0% {
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+
+    100% {
+        transform: translate(-30%, -60%) scale(1.3);
+    }
+}
+
+
+/* =========================================================
+   🪐 ORBIT GLOW
+   ========================================================= */
+
+.rainbow-orbit {
+    box-shadow:
+        0 0 15px rgba(0,229,255,0.25),
+        0 0 35px rgba(156,39,255,0.15);
+}
+
+
+/* =========================================================
+   📱 MOBILE OPTIMIZATION
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .galaxy::after {
+        width: 450px;
+        height: 450px;
+    }
+
+    body::before,
+    body::after {
+        width: 180px;
+        height: 180px;
+        filter: blur(55px);
+    }
+
+    .stars::after {
+        font-size: 8px;
+        letter-spacing: 20px;
+        line-height: 60px;
+    }
+
+}
