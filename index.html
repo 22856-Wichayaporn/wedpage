@@ -3,106 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>หน้าแรก - Pam's Cyber Portfolio</title>
+    <meta name="description" content="Pompam Apichai - Student Rainbow Galaxy Portfolio">
+    <title>Pompam Apichai | Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Futuristic Multi-Layer Background Effects -->
-    <div class="bg-effects-container">
-        <div class="cyber-grid"></div>
-        <div class="tech-dots"></div>
-        <div class="aurora-orb orb-1"></div>
-        <div class="aurora-orb orb-2"></div>
-        <div class="aurora-orb orb-3"></div>
-        <div class="sparkles-layer"></div>
-    </div>
 
-    <!-- Cyber Animal Floating Background -->
-    <div class="floating-cyber-animal">
-        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 250, 100 C 350, 80 450, 180 420, 280 C 390, 380 280, 420 180, 390 C 80, 360 50, 240 100, 150 C 150, 60 200, 120 250, 100 Z" fill="url(#rainbow-grad)" opacity="0.35"/>
-            <defs>
-                <linearGradient id="rainbow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#ff007f" />
-                    <stop offset="25%" stop-color="#7f00ff" />
-                    <stop offset="50%" stop-color="#00d4ff" />
-                    <stop offset="75%" stop-color="#00ff87" />
-                    <stop offset="100%" stop-color="#ff007f" />
-                </linearGradient>
-            </defs>
-        </svg>
-    </div>
+    <!-- Animated Galaxy Background -->
+    <div class="galaxy"></div>
+    <div class="stars stars-1"></div>
+    <div class="stars stars-2"></div>
 
-    <!-- Navigation Bar -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">PAM<span>.DEV</span></div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">หน้าแรก</a></li>
-                <li><a href="profile.html">ประวัติส่วนตัว</a></li>
-                <li><a href="education.html">การศึกษา</a></li>
-                <li><a href="hobby.html">งานอดิเรก</a></li>
-                <li><a href="contact.html">ติดต่อ</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Floating Animals -->
+    <div class="floating-animal animal-cat">🐱</div>
+    <div class="floating-animal animal-bunny">🐰</div>
+    <div class="floating-animal animal-butterfly">🦋</div>
+    <div class="floating-animal animal-unicorn">🦄</div>
 
-    <!-- Hero Section -->
-    <main>
-        <section class="hero-container">
-            <div class="hero-content">
-                <span class="badge">✨ Welcome to my Cyber Space</span>
-                <h1>สวัสดีค่ะ! ฉันชื่อ <br><span class="rainbow-text">วิชญาพร อภิชัย</span></h1>
-                <p class="subtitle">นักเรียนชั้น ม.3/2 โรงเรียนจอมทอง | ผู้มีความสนใจในด้านเทคโนโลยี คณิตศาสตร์ และการสร้างสรรค์สิ่งใหม่ๆ</p>
-                <div class="cta-group">
-                    <a href="profile.html" class="btn btn-primary">รู้จักฉันมากขึ้น 🚀</a>
-                    <a href="hobby.html" class="btn btn-secondary">ดูงานอดิเรกของฉัน 🎮</a>
-                </div>
-            </div>
-            <div class="hero-image-wrapper">
-                <div class="glowing-ring"></div>
-                <img src="https://placehold.co/400x400/0d47a1/ffffff?text=PAM+PROFILE" alt="รูปโปรไฟล์ของวิชญาพร อภิชัย" class="profile-img">
-            </div>
-        </section>
+    <header class="site-header">
+        <nav class="navbar container">
 
-        <!-- Feature Highlight Cards -->
-        <section class="features-grid">
-            <div class="card glass-card">
-                <div class="card-icon">🎓</div>
-                <h3>การศึกษา</h3>
-                <p>ชั้นมัธยมศึกษาปีที่ 3/2 โรงเรียนจอมทอง จ.เชียงใหม่</p>
-            </div>
-            <div class="card glass-card">
-                <div class="card-icon">📐</div>
-                <h3>วิชาที่ชอบ</h3>
-                <p>มีความชื่นชอบและถนัดในรายวิชาคณิตศาสตร์</p>
-            </div>
-            <div class="card glass-card">
-                <div class="card-icon">💻</div>
-                <h3>ความสนใจ</h3>
-                <p>หลงใหลในเทคโนโลยีสมัยใหม่ การเล่นเกม และสื่อภาพยนตร์</p>
-            </div>
-        </section>
-    </main>
+            <a class="logo" href="index.html">
+                <span>✦</span> POMPAM
+            </a>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-info">
-                <h3>วิชญาพร อภิชัย (แพม)</h3>
-                <p>นักเรียนชั้นมัธยมศึกษาปีที่ 3/2 | โรงเรียนจอมทอง</p>
-            </div>
-            <div class="footer-links">
-                <a href="index.html">หน้าแรก</a>
-                <a href="profile.html">ประวัติ</a>
+            <div class="nav-links">
+                <a class="active" href="index.html">หน้าแรก</a>
+                <a href="profile.html">ประวัติส่วนตัว</a>
                 <a href="education.html">การศึกษา</a>
                 <a href="hobby.html">งานอดิเรก</a>
                 <a href="contact.html">ติดต่อ</a>
             </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero container">
+
+            <div class="hero-content">
+
+                <div class="rainbow-badge">
+                    ✨ STUDENT PORTFOLIO ✨
+                </div>
+
+                <p class="hello">Hello! I'm</p>
+
+                <h1>
+                    วิชญาพร
+                    <span>อภิชัย</span>
+                </h1>
+
+                <h2>
+                    <span class="gradient-text">Pompam Apichai</span>
+                </h2>
+
+                <p class="hero-description">
+                    สวัสดีค่ะ! ฉันชื่อแพม นักเรียนชั้นมัธยมศึกษาปีที่ 3
+                    ผู้ชื่นชอบการเรียนรู้สิ่งใหม่ ๆ เล่นเกม
+                    ฟังเพลง ดูหนัง และสนใจเทคโนโลยี
+                </p>
+
+                <div class="hero-buttons">
+                    <a class="btn btn-rainbow" href="profile.html">
+                        รู้จักฉันมากขึ้น →
+                    </a>
+
+                    <a class="btn btn-glass" href="hobby.html">
+                        🎮 ดูงานอดิเรก
+                    </a>
+                </div>
+
+                <div class="mini-stats">
+
+                    <div>
+                        <strong>14</strong>
+                        <span>อายุ</span>
+                    </div>
+
+                    <div>
+                        <strong>ม.3/2</strong>
+                        <span>ระดับชั้น</span>
+                    </div>
+
+                    <div>
+                        <strong>∞</strong>
+                        <span>ความฝัน</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="rainbow-orbit orbit-one"></div>
+                <div class="rainbow-orbit orbit-two"></div>
+
+                <div class="profile-orb">
+
+                    <div class="sparkle sparkle-one">✦</div>
+                    <div class="sparkle sparkle-two">✧</div>
+                    <div class="sparkle sparkle-three">✦</div>
+
+                    <div class="profile-placeholder">
+                        <div class="profile-emoji">👩🏻‍🎓</div>
+                        <span>POMPAM</span>
+                    </div>
+
+                </div>
+
+                <div class="floating-tag tag-one">🌈 Creative</div>
+                <div class="floating-tag tag-two">💫 Dreamer</div>
+                <div class="floating-tag tag-three">🎮 Gamer</div>
+
+            </div>
+
+        </section>
+
+        <!-- INTRODUCTION -->
+        <section class="section container">
+
+            <div class="section-heading">
+                <span class="section-label">ABOUT MY WORLD</span>
+                <h2>ยินดีต้อนรับเข้าสู่ <span class="gradient-text">โลกของแพม</span> 🌌</h2>
+                <p>
+                    เว็บไซต์ Portfolio เล็ก ๆ ที่รวบรวมเรื่องราว
+                    ความสนใจ การศึกษา และสิ่งที่ฉันชอบ
+                </p>
+            </div>
+
+            <div class="feature-grid">
+
+                <article class="feature-card rainbow-card">
+                    <div class="feature-icon">🌈</div>
+                    <h3>Creative</h3>
+                    <p>
+                        ชอบการออกแบบและการสร้างสรรค์สิ่งใหม่ ๆ
+                        ให้มีเอกลักษณ์และน่าสนใจ
+                    </p>
+                </article>
+
+                <article class="feature-card blue-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Gaming</h3>
+                    <p>
+                        สนุกกับการเล่นเกม โดยเฉพาะ Roblox
+                        และใช้เวลาว่างไปกับการค้นพบสิ่งใหม่ ๆ
+                    </p>
+                </article>
+
+                <article class="feature-card purple-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Future</h3>
+                    <p>
+                        อยากเรียนรู้เทคโนโลยีและพัฒนาตัวเอง
+                        ให้เก่งขึ้นในทุก ๆ วัน
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- CTA -->
+        <section class="cta container">
+
+            <div>
+                <span class="section-label">LET'S EXPLORE</span>
+                <h2>พร้อมออกเดินทางไปด้วยกันหรือยัง? 🚀</h2>
+                <p>
+                    ลองดูเรื่องราวในแต่ละหน้าของ Portfolio ได้เลย
+                </p>
+            </div>
+
+            <a class="btn btn-rainbow" href="profile.html">
+                Explore My Portfolio ✨
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+                <a class="logo" href="index.html">
+                    <span>✦</span> POMPAM
+                </a>
+                <p>Rainbow Galaxy Student Portfolio</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">หน้าแรก</a>
+                <a href="profile.html">ประวัติส่วนตัว</a>
+                <a href="education.html">การศึกษา</a>
+                <a href="hobby.html">งานอดิเรก</a>
+                <a href="contact.html">ติดต่อ</a>
+            </div>
+
+            <div class="copyright">
+                © 2026 Pompam Apichai · M.3/2
+            </div>
+
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Vichayaporn Apichai. All Rights Reserved. Computer Science Project.</p>
-        </div>
+
     </footer>
+
 </body>
 </html>
