@@ -1,98 +1,104 @@
+```html
 <!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pompam Apichai Profile">
-    <title>Pompam Apichai | Profile</title>
+    <meta name="description" content="ประวัติส่วนตัวของวิชญาพร อภิชัย">
+    <title>Profile | PAM</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="galaxy"></div>
-    <div class="stars stars-1"></div>
-    <div class="stars stars-2"></div>
+    <div class="galaxy-bg"></div>
 
-    <div class="floating-animal animal-cat">🐱</div>
-    <div class="floating-animal animal-bunny">🐰</div>
-    <div class="floating-animal animal-butterfly">🦋</div>
-    <div class="floating-animal animal-unicorn">🦄</div>
+    <div class="stars">
+        <span>✦</span>
+        <span>✧</span>
+        <span>★</span>
+        <span>✦</span>
+        <span>✧</span>
+        <span>★</span>
+        <span>✦</span>
+        <span>✧</span>
+        <span>★</span>
+        <span>✦</span>
+    </div>
 
-    <header class="site-header">
-        <nav class="navbar container">
+    <div class="floating-animal animal-one">🐱</div>
+    <div class="floating-animal animal-two">🦋</div>
+    <div class="floating-animal animal-three">🐼</div>
 
-            <a class="logo" href="index.html">
-                <span>✦</span> POMPAM
-            </a>
+    <header class="navbar">
 
-            <div class="nav-links">
-                <a href="index.html">หน้าแรก</a>
-                <a class="active" href="profile.html">ประวัติส่วนตัว</a>
-                <a href="education.html">การศึกษา</a>
-                <a href="hobby.html">งานอดิเรก</a>
-                <a href="contact.html">ติดต่อ</a>
-            </div>
+        <a href="index.html" class="logo">
+            PAM<span>★</span>
+        </a>
 
+        <nav>
+            <a href="index.html">หน้าแรก</a>
+            <a href="profile.html" class="active">ประวัติส่วนตัว</a>
+            <a href="education.html">การศึกษา</a>
+            <a href="hobby.html">งานอดิเรก</a>
+            <a href="contact.html">ติดต่อ</a>
         </nav>
+
     </header>
 
     <main>
 
-        <section class="page-hero container">
+        <section class="page-hero">
 
-            <span class="section-label">01 · PROFILE</span>
+            <div class="page-tag">🌈 GET TO KNOW ME</div>
 
             <h1>
-                About <span class="gradient-text">Me</span> ✨
+                ประวัติ<span>ส่วนตัว</span>
             </h1>
 
             <p>
-                มาทำความรู้จักกับแพมให้มากขึ้น
+                มาทำความรู้จักกับฉันให้มากขึ้น
             </p>
 
         </section>
 
-        <section class="profile-section container">
+        <section class="profile-section">
 
-            <div class="profile-large">
+            <div class="profile-image-area">
 
-                <div class="profile-glow"></div>
-
-                <div class="profile-image">
-                    <div>👩🏻‍🎓</div>
-                    <span>POMPAM</span>
+                <div class="profile-ring">
+                    <img
+                        src="https://placehold.co/500x600/111827/FFFFFF?text=PAM"
+                        alt="รูปโปรไฟล์ของวิชญาพร"
+                    >
                 </div>
 
-                <div class="profile-rainbow"></div>
+                <div class="profile-caption">
+                    <strong>PAM</strong>
+                    <span>Student • Dreamer • Creator</span>
+                </div>
 
             </div>
 
             <div class="profile-info">
 
-                <span class="section-label">NICE TO MEET YOU</span>
+                <div class="section-label">WHO AM I?</div>
 
                 <h2>
-                    สวัสดีค่ะ ฉันคือ
-                    <span class="gradient-text">แพม</span> 👋
+                    สวัสดีค่ะ! ฉันชื่อ
+                    <span>วิชญาพร อภิชัย</span>
                 </h2>
 
-                <p>
-                    ฉันชื่อ วิชญาพร อภิชัย ชื่อเล่นแพม
-                    เป็นนักเรียนชั้นมัธยมศึกษาปีที่ 3
-                    ที่ชอบเรียนรู้สิ่งใหม่ ๆ และใช้เวลาว่าง
-                    ไปกับกิจกรรมที่ตัวเองสนใจ
+                <p class="profile-intro">
+                    ฉันเป็นนักเรียนชั้นมัธยมศึกษาปีที่ 3
+                    ที่ชอบเรียนรู้สิ่งใหม่ ๆ และสนุกกับการค้นหาสิ่งที่ตัวเองสนใจ
+                    ฉันชอบเล่นเกม ดูหนัง ฟังเพลง และสนใจเทคโนโลยี
                 </p>
 
                 <div class="info-grid">
 
                     <div class="info-box">
-                        <span>👤 ชื่อ-นามสกุล</span>
-                        <strong>วิชญาพร อภิชัย</strong>
-                    </div>
-
-                    <div class="info-box">
-                        <span>💖 ชื่อเล่น</span>
+                        <span>👩 ชื่อเล่น</span>
                         <strong>แพม</strong>
                     </div>
 
@@ -107,13 +113,18 @@
                     </div>
 
                     <div class="info-box">
+                        <span>📍 จังหวัด</span>
+                        <strong>เชียงใหม่</strong>
+                    </div>
+
+                    <div class="info-box">
                         <span>🏫 โรงเรียน</span>
                         <strong>จอมทอง</strong>
                     </div>
 
                     <div class="info-box">
-                        <span>📍 จังหวัด</span>
-                        <strong>เชียงใหม่</strong>
+                        <span>📚 ระดับชั้น</span>
+                        <strong>ม.3/2</strong>
                     </div>
 
                 </div>
@@ -122,23 +133,58 @@
 
         </section>
 
-        <section class="section container">
+        <section class="about-section">
 
-            <div class="about-box">
+            <div class="section-heading">
+                <p>A LITTLE STORY</p>
+                <h2>เกี่ยวกับ<span>ฉัน</span></h2>
+            </div>
 
-                <div class="about-icon">💫</div>
+            <div class="about-layout">
 
-                <div>
-                    <span class="section-label">ABOUT ME</span>
-                    <h2>สิ่งที่บ่งบอกความเป็นแพม</h2>
+                <div class="about-card large">
+
+                    <div class="about-number">01</div>
+
+                    <h3>ตัวตนของฉัน</h3>
 
                     <p>
-                        ฉันเป็นคนที่ชอบเปิดประสบการณ์ใหม่ ๆ
-                        สนใจเทคโนโลยี ชอบดูหนัง ฟังเพลง
-                        และเล่นเกม นอกจากนี้ยังชอบวิชาคณิตศาสตร์
-                        เพราะรู้สึกว่าการแก้โจทย์เป็นเหมือน
-                        การแก้ Puzzle ที่ท้าทาย
+                        ฉันเป็นคนที่ชอบเรียนรู้และทดลองสิ่งใหม่ ๆ
+                        โดยเฉพาะสิ่งที่เกี่ยวข้องกับคอมพิวเตอร์
+                        เทคโนโลยี และความคิดสร้างสรรค์
+                        ฉันเชื่อว่าการเรียนรู้ไม่ได้เกิดขึ้นเฉพาะในห้องเรียน
+                        แต่สามารถเกิดขึ้นได้จากสิ่งรอบตัว
                     </p>
+
+                </div>
+
+                <div class="about-card">
+
+                    <div class="about-number">02</div>
+
+                    <h3>สิ่งที่ฉันชอบ</h3>
+
+                    <p>
+                        🎮 เล่นเกม<br>
+                        🎧 ฟังเพลง<br>
+                        🎬 ดูหนัง<br>
+                        🏸 เล่นแบดมินตัน
+                    </p>
+
+                </div>
+
+                <div class="about-card">
+
+                    <div class="about-number">03</div>
+
+                    <h3>สิ่งที่อยากพัฒนา</h3>
+
+                    <p>
+                        ฉันอยากพัฒนาทักษะด้านคอมพิวเตอร์
+                        การออกแบบเว็บไซต์ และความคิดสร้างสรรค์
+                        เพื่อสร้างผลงานที่เป็นของตัวเอง
+                    </p>
+
                 </div>
 
             </div>
@@ -149,12 +195,10 @@
 
     <footer class="footer">
 
-        <div class="container footer-content">
+        <div class="footer-main">
 
             <div>
-                <a class="logo" href="index.html">
-                    <span>✦</span> POMPAM
-                </a>
+                <div class="footer-logo">PAM<span>★</span></div>
                 <p>Rainbow Galaxy Student Portfolio</p>
             </div>
 
@@ -166,13 +210,14 @@
                 <a href="contact.html">ติดต่อ</a>
             </div>
 
-            <div class="copyright">
-                © 2026 Pompam Apichai · M.3/2
-            </div>
+        </div>
 
+        <div class="footer-bottom">
+            <p>© 2026 วิชญาพร อภิชัย | ม.3/2</p>
         </div>
 
     </footer>
 
 </body>
 </html>
+```
