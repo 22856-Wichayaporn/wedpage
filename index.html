@@ -1,288 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Rainbow Cyber Portfolio | วิชญาพร อภิชัย</title>
+    <title>VICHYAPORN — หน้าแรก</title>
 
-    <link rel="stylesheet" href="style.css">
-
-    <meta name="description"
-          content="เว็บไซต์ Portfolio ของ วิชญาพร อภิชัย นักเรียนชั้นมัธยมศึกษาปีที่ 3/2">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- ===============================
-         Animated Background
-    ================================ -->
+    <!-- Background -->
+    <div class="bg"></div>
+    <div class="stars"></div>
 
-    <div class="space-bg"></div>
+    <!-- เอฟเฟกต์ทั้งหมด -->
+    <div id="fx"></div>
 
-    <div class="stars stars-1"></div>
-    <div class="stars stars-2"></div>
-    <div class="stars stars-3"></div>
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
 
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="orb orb-3"></div>
 
-    <!-- Floating Cyber Animals -->
-    <div class="cyber-animal animal-dragon">🐉</div>
-    <div class="cyber-animal animal-cat">🐈‍⬛</div>
-    <div class="cyber-animal animal-butterfly">🦋</div>
+    <!-- ================= NAVBAR ================= -->
 
-    <!-- ===============================
-         Navigation
-    ================================ -->
+    <nav>
 
-    <header class="navbar">
-
-        <a href="index.html" class="logo">
-            <span class="logo-icon">✦</span>
-            <span>VICHYAPORN</span>
+        <a class="logo" href="index.html">
+            ✦ <b>VICHYAPORN</b>
         </a>
 
-        <nav class="nav-menu">
+        <div class="navlinks">
 
-            <a href="index.html" class="active">
-                🏠 หน้าแรก
+            <a href="index.html">
+                ⌂ หน้าแรก
             </a>
 
             <a href="profile.html">
-                👤 ประวัติส่วนตัว
+                ◈ ประวัติส่วนตัว
             </a>
 
-            <a href="education.html">
-                🎓 การศึกษา
+            <a href="works.html">
+                ⚡ ผลงาน
             </a>
 
-            <a href="hobby.html">
-                🎮 งานอดิเรก
+            <a href="games.html">
+                🎮 เกม
+            </a>
+
+            <a href="gallery.html">
+                🖼 แกลเลอรี
             </a>
 
             <a href="contact.html">
-                📡 ติดต่อ
+                ✦ ติดต่อ
             </a>
 
-        </nav>
+        </div>
 
-    </header>
+    </nav>
 
 
-    <!-- ===============================
-         Main
-    ================================ -->
+    <!-- ================= HERO ================= -->
 
     <main>
 
-        <!-- HERO -->
+        <section class="hero">
 
-        <section class="hero section">
+            <div class="wrap reveal">
 
-            <div class="hero-content reveal">
-
-                <div class="mini-badge">
-                    ✨ WELCOME TO MY DIGITAL WORLD ✨
+                <div class="eyebrow">
+                    ✦ VICHYAPORN DIGITAL UNIVERSE ✦
                 </div>
 
-                <p class="hero-small">
-                    HELLO, I'M
-                </p>
 
                 <h1>
-                    วิชญาพร
-                    <span>อภิชัย</span>
+
+                    <span class="glitch">
+                        VICHYAPORN
+                    </span>
+
+                    <br>
+
+                    APICHAI
+
                 </h1>
 
-                <h2>
-                    <span class="rainbow-text">
-                        Student • Creator • Dreamer
-                    </span>
-                </h2>
 
-                <p class="hero-description">
-                    เว็บไซต์แนะนำตัวของนักเรียนชั้นมัธยมศึกษาปีที่ 3/2
-                    ที่ชื่นชอบเทคโนโลยี เกม ดนตรี และการเรียนรู้สิ่งใหม่ ๆ
-                </p>
+                <div class="subtitle">
 
-                <div class="hero-buttons">
+                    Student • Creator •
 
-                    <a href="profile.html" class="btn btn-rainbow">
-                        ✨ รู้จักฉันมากขึ้น
-                    </a>
-
-                    <a href="hobby.html" class="btn btn-glass">
-                        🎮 ดูงานอดิเรกของฉัน
-                    </a>
+                    <span id="type" class="type"></span>
 
                 </div>
 
-                <div class="hero-stats">
-
-                    <div>
-                        <strong>14</strong>
-                        <span>อายุ</span>
-                    </div>
-
-                    <div>
-                        <strong>M.3/2</strong>
-                        <span>ระดับชั้น</span>
-                    </div>
-
-                    <div>
-                        <strong>∞</strong>
-                        <span>ความฝัน</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- HERO VISUAL -->
-
-            <div class="hero-visual reveal">
-
-                <div class="energy-ring ring-1"></div>
-                <div class="energy-ring ring-2"></div>
-                <div class="energy-ring ring-3"></div>
-
-                <div class="profile-orbit">
-
-                    <div class="orbit-dot dot-1"></div>
-                    <div class="orbit-dot dot-2"></div>
-                    <div class="orbit-dot dot-3"></div>
-
-                    <div class="profile-frame">
-
-                        <img
-                            src="https://placehold.co/600x700/111827/ffffff?text=MY+PROFILE"
-                            alt="รูปโปรไฟล์ของฉัน">
-
-                    </div>
-
-                </div>
-
-                <div class="floating-tag tag-1">
-                    🌈 DREAM
-                </div>
-
-                <div class="floating-tag tag-2">
-                    ⚡ CREATE
-                </div>
-
-                <div class="floating-tag tag-3">
-                    🚀 FUTURE
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- HIGHLIGHT -->
-
-        <section class="section">
-
-            <div class="section-heading reveal">
-
-                <span class="section-number">01</span>
-
-                <div>
-                    <p class="eyebrow">MY DIGITAL IDENTITY</p>
-
-                    <h2>
-                        <span class="rainbow-text">
-                            More Than Just A Student
-                        </span>
-                    </h2>
-                </div>
-
-            </div>
-
-
-            <div class="feature-grid">
-
-                <article class="feature-card rainbow-border reveal">
-
-                    <div class="feature-icon">
-                        🧠
-                    </div>
-
-                    <h3>เรียนรู้</h3>
-
-                    <p>
-                        สนุกกับการเรียนรู้สิ่งใหม่ ๆ
-                        โดยเฉพาะคณิตศาสตร์และเทคโนโลยี
-                    </p>
-
-                </article>
-
-
-                <article class="feature-card rainbow-border reveal">
-
-                    <div class="feature-icon">
-                        🎮
-                    </div>
-
-                    <h3>ความสนใจ</h3>
-
-                    <p>
-                        ชอบเล่นเกม ดูหนัง ฟังเพลง
-                        และสำรวจโลกดิจิทัล
-                    </p>
-
-                </article>
-
-
-                <article class="feature-card rainbow-border reveal">
-
-                    <div class="feature-icon">
-                        🚀
-                    </div>
-
-                    <h3>อนาคต</h3>
-
-                    <p>
-                        อยากพัฒนาตัวเองและสร้างผลงาน
-                        ที่น่าสนใจในอนาคต
-                    </p>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- CTA -->
-
-        <section class="cta-section section reveal">
-
-            <div class="cta-card">
-
-                <div class="cta-glow"></div>
-
-                <p class="eyebrow">
-                    READY TO EXPLORE?
-                </p>
-
-                <h2>
-                    เข้ามารู้จักโลกของฉัน
-                    <span class="rainbow-text">กันเถอะ ✨</span>
-                </h2>
 
                 <p>
-                    Portfolio เล็ก ๆ ของนักเรียนคนหนึ่ง
-                    ที่เต็มไปด้วยความสนใจ ความฝัน และจินตนาการ
+                    ยินดีต้อนรับเข้าสู่โลกส่วนตัวของฉัน —
+                    เว็บไซต์พอร์ตโฟลิโอธีมจักรวาล Neon
+                    ที่เต็มไปด้วยสัตว์น่ารัก แสงสี
+                    และเอฟเฟกต์แบบจัดเต็ม
                 </p>
 
-                <a href="profile.html" class="btn btn-rainbow">
-                    🚀 เริ่มสำรวจ Portfolio
-                </a>
 
+                <div class="buttons">
+
+                    <a class="btn primary" href="profile.html">
+                        ✦ สำรวจโปรไฟล์
+                    </a>
+
+                    <a class="btn" href="works.html">
+                        ⚡ ดูผลงาน
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- สัตว์ลอย -->
+
+            <div class="floatpet p1">
+                🐱
+            </div>
+
+            <div class="floatpet p2">
+                🦊
+            </div>
+
+            <div class="floatpet p3">
+                🦄
             </div>
 
         </section>
@@ -290,121 +140,16 @@
     </main>
 
 
-    <!-- ===============================
-         Footer
-    ================================ -->
+    <footer>
 
-    <footer class="footer">
-
-        <div class="footer-logo">
-            ✦ VICHYAPORN
-        </div>
-
-        <p>
-            วิชญาพร อภิชัย • ม.3/2
-        </p>
-
-        <div class="footer-links">
-
-            <a href="index.html">หน้าแรก</a>
-            <a href="profile.html">ประวัติ</a>
-            <a href="education.html">การศึกษา</a>
-            <a href="hobby.html">งานอดิเรก</a>
-            <a href="contact.html">ติดต่อ</a>
-
-        </div>
-
-        <p class="copyright">
-            © 2026 Rainbow Cyber Student Portfolio
-        </p>
+        ✦ VICHYAPORN APICHAI
+        • NEON DIGITAL UNIVERSE ✦
 
     </footer>
 
 
-    <!-- Hover Sound -->
-
-    <script>
-        let audioContext;
-
-        function playHoverSound() {
-
-            try {
-
-                audioContext =
-                    audioContext ||
-                    new (window.AudioContext ||
-                    window.webkitAudioContext)();
-
-                const oscillator =
-                    audioContext.createOscillator();
-
-                const gain =
-                    audioContext.createGain();
-
-                oscillator.frequency.value = 700;
-
-                gain.gain.setValueAtTime(
-                    0.025,
-                    audioContext.currentTime
-                );
-
-                gain.gain.exponentialRampToValueAtTime(
-                    0.001,
-                    audioContext.currentTime + 0.08
-                );
-
-                oscillator.connect(gain);
-                gain.connect(audioContext.destination);
-
-                oscillator.start();
-                oscillator.stop(
-                    audioContext.currentTime + 0.08
-                );
-
-            } catch (error) {}
-
-        }
-
-        document
-            .querySelectorAll("a, button, .feature-card")
-            .forEach(element => {
-
-                element.addEventListener(
-                    "mouseenter",
-                    playHoverSound
-                );
-
-            });
-
-
-        const revealElements =
-            document.querySelectorAll(".reveal");
-
-        const observer =
-            new IntersectionObserver(
-                entries => {
-
-                    entries.forEach(entry => {
-
-                        if (entry.isIntersecting) {
-
-                            entry.target.classList.add("show");
-
-                        }
-
-                    });
-
-                },
-                {
-                    threshold: 0.12
-                }
-            );
-
-        revealElements.forEach(
-            element => observer.observe(element)
-        );
-
-    </script>
+    <script src="js/app.js"></script>
 
 </body>
+
 </html>
