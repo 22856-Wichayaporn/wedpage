@@ -1,225 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="th">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>VICHYAPORN — ประวัติส่วนตัว</title>
-
-    <link rel="stylesheet" href="css/style.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประวัติส่วนตัว - Pam's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
+    <div class="floating-cyber-animal">
+        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 250, 100 C 350, 80 450, 180 420, 280 C 390, 380 280, 420 180, 390 C 80, 360 50, 240 100, 150 C 150, 60 200, 120 250, 100 Z" fill="url(#rainbow-grad)" opacity="0.35"/>
+            <defs>
+                <linearGradient id="rainbow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ff007f" />
+                    <stop offset="25%" stop-color="#7f00ff" />
+                    <stop offset="50%" stop-color="#00d4ff" />
+                    <stop offset="75%" stop-color="#00ff87" />
+                    <stop offset="100%" stop-color="#ff007f" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
 
-    <div class="bg"></div>
-    <div class="stars"></div>
+    <header>
+        <nav class="navbar">
+            <div class="logo">PAM<span>.DEV</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="profile.html" class="active">ประวัติส่วนตัว</a></li>
+                <li><a href="education.html">การศึกษา</a></li>
+                <li><a href="hobby.html">งานอดิเรก</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div id="fx"></div>
-
-    <div class="cursor"></div>
-    <div class="cursor-dot"></div>
-
-
-    <!-- NAVBAR -->
-
-    <nav>
-
-        <a class="logo" href="index.html">
-            ✦ <b>VICHYAPORN</b>
-        </a>
-
-
-        <div class="navlinks">
-
-            <a href="index.html">
-                ⌂ หน้าแรก
-            </a>
-
-            <a href="profile.html">
-                ◈ ประวัติส่วนตัว
-            </a>
-
-            <a href="works.html">
-                ⚡ ผลงาน
-            </a>
-
-            <a href="games.html">
-                🎮 เกม
-            </a>
-
-            <a href="gallery.html">
-                🖼 แกลเลอรี
-            </a>
-
-            <a href="contact.html">
-                ✦ ติดต่อ
-            </a>
-
+    <main class="page-container">
+        <div class="page-header">
+            <h1 class="rainbow-text">ประวัติส่วนตัว (Profile)</h1>
+            <p>ทำความรู้จักกับแพมให้มากขึ้น ทั้งข้อมูลส่วนตัว และความตั้งใจในการเรียน</p>
         </div>
 
-    </nav>
-
-
-    <!-- CONTENT -->
-
-    <main>
-
-        <section>
-
-            <div class="wrap">
-
-                <h1 class="title reveal">
-
-                    MY
-
-                    <span>
-                        PROFILE
-                    </span>
-
-                </h1>
-
-
-                <div class="grid3">
-
-
-                    <article class="card reveal">
-
-                        <div class="icon">
-                            🪐
-                        </div>
-
-                        <h3>
-                            เกี่ยวกับฉัน
-                        </h3>
-
-                        <p>
-                            นักเรียนที่ชอบเทคโนโลยี
-                            เกม ดนตรี
-                            และการสร้างสรรค์สิ่งใหม่ ๆ
-                        </p>
-
-                    </article>
-
-
-                    <article class="card reveal">
-
-                        <div class="icon">
-                            🎮
-                        </div>
-
-                        <h3>
-                            สิ่งที่ชอบ
-                        </h3>
-
-                        <p>
-                            เว็บไซต์ งานออกแบบ เกม
-                            และการทดลองเอฟเฟกต์แปลกใหม่
-                        </p>
-
-                    </article>
-
-
-                    <article class="card reveal">
-
-                        <div class="icon">
-                            🚀
-                        </div>
-
-                        <h3>
-                            เป้าหมาย
-                        </h3>
-
-                        <p>
-                            สร้างผลงานที่มีเอกลักษณ์
-                            และพัฒนาตัวเองให้เก่งขึ้นทุกวัน
-                        </p>
-
-                    </article>
-
-
-                </div>
-
-
-                <!-- STATS -->
-
-                <div class="stats">
-
-                    <div class="stat reveal">
-
-                        <b>
-                            14
-                        </b>
-
-                        <span>
-                            AGE
-                        </span>
-
-                    </div>
-
-
-                    <div class="stat reveal">
-
-                        <b>
-                            M.3/2
-                        </b>
-
-                        <span>
-                            CLASS
-                        </span>
-
-                    </div>
-
-
-                    <div class="stat reveal">
-
-                        <b>
-                            ∞
-                        </b>
-
-                        <span>
-                            IDEAS
-                        </span>
-
-                    </div>
-
-
-                    <div class="stat reveal">
-
-                        <b>
-                            100%
-                        </b>
-
-                        <span>
-                            DREAM
-                        </span>
-
-                    </div>
-
-                </div>
-
+        <section class="profile-layout">
+            <div class="profile-card-main glass-card">
+                <img src="https://placehold.co/350x350/1976d2/ffffff?text=Vichayaporn" alt="รูปโปรไฟล์ของวิชญาพร อภิชัย" class="profile-avatar">
+                <h2>วิชญาพร อภิชัย</h2>
+                <span class="nickname-tag">ชื่อเล่น: แพม 🌟</span>
+                <p class="profile-status">นักเรียนระดับชั้น ม.3/2</p>
             </div>
 
+            <div class="profile-details-grid">
+                <div class="info-box glass-card">
+                    <span class="info-label">👤 ชื่อ-นามสกุล</span>
+                    <span class="info-value">วิชญาพร อภิชัย</span>
+                </div>
+                <div class="info-box glass-card">
+                    <span class="info-label">🎂 วันเกิด</span>
+                    <span class="info-value">14 ธันวาคม 2554 (2011)</span>
+                </div>
+                <div class="info-box glass-card">
+                    <span class="info-label">🎈 อายุ</span>
+                    <span class="info-value">14 ปี</span>
+                </div>
+                <div class="info-box glass-card">
+                    <span class="info-label">📍 จังหวัด</span>
+                    <span class="info-value">เชียงใหม่, ประเทศไทย</span>
+                </div>
+                <div class="info-box glass-card col-span-2">
+                    <span class="info-label">✨ สโลแกน / ความตั้งใจ</span>
+                    <span class="info-value">"มุ่งมั่น ตั้งใจเรียน และพร้อมเปิดรับความรู้ด้านเทคโนโลยีใหม่ๆ อยู่เสมอ"</span>
+                </div>
+            </div>
         </section>
 
+        <section class="about-me-section glass-card">
+            <h2>เกี่ยวกับฉัน (About Me)</h2>
+            <p>สวัสดีค่ะ ฉันชื่อแพม นางสาววิชญาพร อภิชัย กำลังศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 3/2 โรงเรียนจอมทอง จังหวัดเชียงใหม่ ฉันเป็นคนที่ชื่นชอบการเรียนรู้สิ่งใหม่ๆ มีความสนใจเป็นพิเศษในวิชาคณิตศาสตร์ และโลกของเทคโนโลยีคอมพิวเตอร์ ยามว่างฉันชอบเล่นเกม Roblox กีฬาแบดมินตัน ฟังเพลง Illslick และดูภาพยนตร์เพื่อผ่อนคลายความเครียดค่ะ</p>
+        </section>
     </main>
 
-
     <footer>
-
-        ✦ VICHYAPORN APICHAI
-        • NEON DIGITAL UNIVERSE ✦
-
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>วิชญาพร อภิชัย (แพม)</h3>
+                <p>นักเรียนชั้นมัธยมศึกษาปีที่ 3/2 | โรงเรียนจอมทอง</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">หน้าแรก</a>
+                <a href="profile.html">ประวัติ</a>
+                <a href="education.html">การศึกษา</a>
+                <a href="hobby.html">งานอดิเรก</a>
+                <a href="contact.html">ติดต่อ</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Vichayaporn Apichai. All Rights Reserved. Computer Science Project.</p>
+        </div>
     </footer>
-
-
-    <script src="js/app.js"></script>
-
 </body>
-
 </html>
