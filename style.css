@@ -1,103 +1,612 @@
-<!DOCTYPE html>
-<html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ติดต่อ - Pam's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="floating-cyber-animal">
-        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 250, 100 C 350, 80 450, 180 420, 280 C 390, 380 280, 420 180, 390 C 80, 360 50, 240 100, 150 C 150, 60 200, 120 250, 100 Z" fill="url(#rainbow-grad)" opacity="0.35"/>
-            <defs>
-                <linearGradient id="rainbow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#ff007f" />
-                    <stop offset="25%" stop-color="#7f00ff" />
-                    <stop offset="50%" stop-color="#00d4ff" />
-                    <stop offset="75%" stop-color="#00ff87" />
-                    <stop offset="100%" stop-color="#ff007f" />
-                </linearGradient>
-            </defs>
-        </svg>
-    </div>
+/* ===================================================
+   CYBER RAINBOW MODERN STUDENT PORTFOLIO STYLESHEET
+   =================================================== */
 
-    <header>
-        <nav class="navbar">
-            <div class="logo">PAM<span>.DEV</span></div>
-            <ul class="nav-links">
-                <li><a href="index.html">หน้าแรก</a></li>
-                <li><a href="profile.html">ประวัติส่วนตัว</a></li>
-                <li><a href="education.html">การศึกษา</a></li>
-                <li><a href="hobby.html">งานอดิเรก</a></li>
-                <li><a href="contact.html" class="active">ติดต่อ</a></li>
-            </ul>
-        </nav>
-    </header>
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap');
 
-    <main class="page-container">
-        <div class="page-header">
-            <h1 class="rainbow-text">ช่องทางการติดต่อ (Contact)</h1>
-            <p>สามารถติดต่อหรือส่งข้อความถึงแพมได้ตามช่องทางด้านล่างนี้เลยค่ะ</p>
-        </div>
+/* Color Variables */
+:root {
+    --primary-blue: #0D47A1;
+    --medium-blue: #1976D2;
+    --light-blue: #42A5F5;
+    --soft-blue: #90CAF9;
+    --bg-light: #E3F2FD;
+    --white: #FFFFFF;
+    --dark-text: #0b1b3d;
+    --glass-bg: rgba(255, 255, 255, 0.25);
+    --glass-border: rgba(255, 255, 255, 0.4);
+    --shadow-glow: 0 8px 32px 0 rgba(13, 71, 161, 0.25);
+}
 
-        <section class="contact-layout">
-            <div class="contact-info-cards">
-                <div class="contact-card glass-card">
-                    <div class="contact-icon">📧</div>
-                    <h3>อีเมล (Email)</h3>
-                    <p>vichayaporn.pam@example.com</p>
-                </div>
-                <div class="contact-card glass-card">
-                    <div class="contact-icon">📍</div>
-                    <h3>ที่อยู่ (Location)</h3>
-                    <p>อำเภอจอมทอง จังหวัดเชียงใหม่ 50160</p>
-                </div>
-                <div class="contact-card glass-card">
-                    <div class="contact-icon">🏫</div>
-                    <h3>สถานศึกษา</h3>
-                    <p>โรงเรียนจอมทอง (ชั้น ม.3/2)</p>
-                </div>
-            </div>
+/* Global Reset & Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
 
-            <div class="contact-form-container glass-card">
-                <h2>ส่งข้อความถึงแพม ✉️</h2>
-                <form class="contact-form" action="#" method="post" onclick="return false;">
-                    <div class="form-group">
-                        <label for="name">ชื่อผู้ติดต่อ:</label>
-                        <input type="text" id="name" placeholder="ระบุชื่อของคุณ..." required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">อีเมล:</label>
-                        <input type="email" id="email" placeholder="example@email.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">ข้อความ:</label>
-                        <textarea id="message" rows="4" placeholder="พิมพ์ข้อความที่ต้องการส่ง..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block">ส่งข้อความ ✨</button>
-                </form>
-            </div>
-        </section>
-    </main>
+body {
+    position: relative;
+    min-height: 100vh;
+    color: var(--dark-text);
+    overflow-x: hidden;
+    /* Animated Dynamic Rainbow Background */
+    background: linear-gradient(-45deg, #0d47a1, #1976d2, #8e24aa, #e91e63, #ff1744, #00e676, #00bcd4);
+    background-size: 400% 400%;
+    animation: rainbowShift 12s ease infinite;
+}
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-info">
-                <h3>วิชญาพร อภิชัย (แพม)</h3>
-                <p>นักเรียนชั้นมัธยมศึกษาปีที่ 3/2 | โรงเรียนจอมทอง</p>
-            </div>
-            <div class="footer-links">
-                <a href="index.html">หน้าแรก</a>
-                <a href="profile.html">ประวัติ</a>
-                <a href="education.html">การศึกษา</a>
-                <a href="hobby.html">งานอดิเรก</a>
-                <a href="contact.html">ติดต่อ</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Vichayaporn Apichai. All Rights Reserved. Computer Science Project.</p>
-        </div>
-    </footer>
-</body>
-</html>
+@keyframes rainbowShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Floating Cyber Animal Background Component */
+.floating-cyber-animal {
+    position: fixed;
+    top: 15%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    z-index: -1;
+    pointer-events: none;
+    animation: floatAnimal 16s ease-in-out infinite alternate;
+    filter: blur(10px) drop-shadow(0 0 20px rgba(0,212,255,0.6));
+}
+
+@keyframes floatAnimal {
+    0% {
+        transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+    50% {
+        transform: translate(60vw, 30vh) rotate(180deg) scale(1.3);
+    }
+    100% {
+        transform: translate(80vw, -10vh) rotate(360deg) scale(0.9);
+    }
+}
+
+/* Navigation Bar */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 8%;
+    background: rgba(13, 71, 161, 0.65);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--glass-border);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #00e676;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.8rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.05rem;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    background: linear-gradient(90deg, #00d4ff, #ff007f);
+    color: var(--white);
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.6);
+}
+
+/* Glassmorphism Cards */
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: var(--shadow-glow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(255, 0, 127, 0.3);
+}
+
+/* Typography & Colors */
+.rainbow-text {
+    background: linear-gradient(90deg, #ff007f, #7f00ff, #00d4ff, #00ff87, #ffef00);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbowText 4s linear infinite;
+}
+
+@keyframes rainbowText {
+    to { background-position: 200% center; }
+}
+
+/* Layout Containers */
+main {
+    padding: 3rem 8%;
+    min-height: calc(100vh - 180px);
+}
+
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--white);
+}
+
+.page-header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Hero Section */
+.hero-container {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    color: var(--white);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content h1 {
+    font-size: 3.2rem;
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: #f0f4f8;
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.cta-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #00d4ff, #7f00ff);
+    color: var(--white);
+    box-shadow: 0 4px 15px rgba(0, 212, 255, 0.4);
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 0, 127, 0.6);
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.btn-secondary:hover {
+    background: var(--white);
+    color: var(--primary-blue);
+}
+
+.hero-image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--white);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.glowing-ring {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #ff007f, #00d4ff, #00ff87);
+    animation: rotateGlow 6s linear infinite;
+    z-index: 1;
+    filter: blur(8px);
+}
+
+@keyframes rotateGlow {
+    100% { transform: rotate(360deg); }
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.features-grid h3 {
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+
+.features-grid p {
+    color: #e2e8f0;
+}
+
+/* Profile Page */
+.profile-layout {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.profile-card-main {
+    text-align: center;
+    color: var(--white);
+}
+
+.profile-avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 4px solid var(--white);
+}
+
+.nickname-tag {
+    display: inline-block;
+    margin: 0.5rem 0;
+    padding: 0.3rem 1rem;
+    background: rgba(255,255,255,0.3);
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.profile-details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+}
+
+.info-label {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 0.3rem;
+}
+
+.info-value {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.col-span-2 {
+    grid-column: span 2;
+}
+
+.about-me-section {
+    color: var(--white);
+    line-height: 1.8;
+}
+
+.about-me-section h2 {
+    margin-bottom: 1rem;
+}
+
+/* Education Page (Timeline & Table) */
+.timeline-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto 4rem auto;
+}
+
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: var(--white);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+}
+
+.timeline-item.left { left: 0; }
+.timeline-item.right { left: 50%; }
+
+.timeline-content {
+    color: var(--white);
+}
+
+.timeline-date {
+    display: inline-block;
+    padding: 0.2rem 0.8rem;
+    background: #00d4ff;
+    color: var(--dark-text);
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.edu-highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.table-section {
+    color: var(--white);
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.custom-table th, .custom-table td {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.custom-table th {
+    background: rgba(13, 71, 161, 0.5);
+}
+
+.status-badge {
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+}
+
+.status-badge.completed { background: #00e676; color: #000; }
+.status-badge.current { background: #ffef00; color: #000; }
+
+/* Hobby Page Grid */
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.hobby-card {
+    text-align: center;
+    color: var(--white);
+}
+
+.hobby-icon {
+    font-size: 3.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.hobby-cat {
+    color: #00d4ff;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+/* Contact Page */
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2.5rem;
+}
+
+.contact-card {
+    margin-bottom: 1.5rem;
+    color: var(--white);
+}
+
+.contact-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form-container {
+    color: var(--white);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group input, .form-group textarea {
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: 1px solid var(--glass-border);
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--white);
+    outline: none;
+}
+
+.form-group input::placeholder, .form-group textarea::placeholder {
+    color: #e2e8f0;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+/* Footer Section */
+footer {
+    background: rgba(10, 25, 47, 0.85);
+    backdrop-filter: blur(16px);
+    color: var(--white);
+    padding: 2.5rem 8% 1rem 8%;
+    border-top: 1px solid var(--glass-border);
+    margin-top: 3rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    color: #f0f4f8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #00d4ff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+/* Responsive Design (Mobile & Tablet) */
+@media (max-width: 900px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .cta-group {
+        justify-content: center;
+    }
+    .profile-layout {
+        grid-template-columns: 1fr;
+    }
+    .col-span-2 {
+        grid-column: span 1;
+    }
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+    .edu-highlights {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+    .timeline-container::after {
+        left: 31px;
+    }
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    .timeline-item.right {
+        left: 0%;
+    }
+}
