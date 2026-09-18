@@ -3,91 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>หน้าแรก - Pam's Portfolio</title>
+    <title>Wichayaporn | My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="floating-cyber-animal">
-        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 250, 100 C 350, 80 450, 180 420, 280 C 390, 380 280, 420 180, 390 C 80, 360 50, 240 100, 150 C 150, 60 200, 120 250, 100 Z" fill="url(#rainbow-grad)" opacity="0.35"/>
-            <defs>
-                <linearGradient id="rainbow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#ff007f" />
-                    <stop offset="25%" stop-color="#7f00ff" />
-                    <stop offset="50%" stop-color="#00d4ff" />
-                    <stop offset="75%" stop-color="#00ff87" />
-                    <stop offset="100%" stop-color="#ff007f" />
-                </linearGradient>
-            </defs>
-        </svg>
+
+<div class="stars"></div>
+<div class="floating-shape shape1">✦</div>
+<div class="floating-shape shape2">✧</div>
+<div class="floating-shape shape3">✦</div>
+
+<nav class="navbar">
+    <div class="logo">W♡</div>
+
+    <div class="nav-links">
+        <a class="active" href="index.html">หน้าแรก</a>
+        <a href="profile.html">ประวัติส่วนตัว</a>
+        <a href="education.html">การศึกษา</a>
+        <a href="hobby.html">งานอดิเรก</a>
+        <a href="contact.html">ติดต่อ</a>
+    </div>
+</nav>
+
+<main>
+
+<section class="hero">
+
+    <div class="hero-text reveal">
+        <p class="small-title">✨ WELCOME TO MY WORLD ✨</p>
+
+        <h1>
+            HELLO!
+            <span>I'm Wichayaporn</span>
+        </h1>
+
+        <p class="hero-description">
+            สวัสดีค่ะ ฉันชื่อ <b>วิชญาพร อภิชัย</b><br>
+            นักเรียนชั้นมัธยมศึกษาปีที่ 3/2
+            ผู้ที่ชอบเทคโนโลยี เกม เพลง และการเรียนรู้สิ่งใหม่ ๆ
+        </p>
+
+        <div class="hero-buttons">
+            <a href="profile.html" class="rainbow-btn">รู้จักฉันมากขึ้น →</a>
+            <a href="hobby.html" class="outline-btn">ดูงานอดิเรก ✨</a>
+        </div>
+
+        <div class="mini-stats">
+            <div>
+                <strong>14</strong>
+                <span>อายุ</span>
+            </div>
+
+            <div>
+                <strong>3/2</strong>
+                <span>ห้องเรียน</span>
+            </div>
+
+            <div>
+                <strong>∞</strong>
+                <span>ความฝัน</span>
+            </div>
+        </div>
     </div>
 
-    <header>
-        <nav class="navbar">
-            <div class="logo">PAM<span>.DEV</span></div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">หน้าแรก</a></li>
-                <li><a href="profile.html">ประวัติส่วนตัว</a></li>
-                <li><a href="education.html">การศึกษา</a></li>
-                <li><a href="hobby.html">งานอดิเรก</a></li>
-                <li><a href="contact.html">ติดต่อ</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="hero-visual">
 
-    <main>
-        <section class="hero-container">
-            <div class="hero-content">
-                <span class="badge">✨ Welcome to my Cyber Space</span>
-                <h1>สวัสดีค่ะ! ฉันชื่อ <br><span class="rainbow-text">วิชญาพร อภิชัย</span></h1>
-                <p class="subtitle">นักเรียนชั้น ม.3/2 โรงเรียนจอมทอง | ผู้มีความสนใจในด้านเทคโนโลยี คณิตศาสตร์ และการสร้างสรรค์สิ่งใหม่ๆ</p>
-                <div class="cta-group">
-                    <a href="profile.html" class="btn btn-primary">รู้จักฉันมากขึ้น 🚀</a>
-                    <a href="hobby.html" class="btn btn-secondary">ดูงานอดิเรกของฉัน 🎮</a>
-                </div>
-            </div>
-            <div class="hero-image-wrapper">
-                <div class="glowing-ring"></div>
-                <img src="https://placehold.co/400x400/0d47a1/ffffff?text=PAM+PROFILE" alt="รูปโปรไฟล์ของวิชญาพร อภิชัย" class="profile-img">
-            </div>
-        </section>
+        <div class="rainbow-orbit orbit1"></div>
+        <div class="rainbow-orbit orbit2"></div>
 
-        <section class="features-grid">
-            <div class="card glass-card">
-                <div class="card-icon">🎓</div>
-                <h3>การศึกษา</h3>
-                <p>ชั้นมัธยมศึกษาปีที่ 3/2 โรงเรียนจอมทอง จ.เชียงใหม่</p>
-            </div>
-            <div class="card glass-card">
-                <div class="card-icon">📐</div>
-                <h3>วิชาที่ชอบ</h3>
-                <p>มีความชื่นชอบและถนัดในรายวิชาคณิตศาสตร์</p>
-            </div>
-            <div class="card glass-card">
-                <div class="card-icon">💻</div>
-                <h3>ความสนใจ</h3>
-                <p>หลงใหลในเทคโนโลยีสมัยใหม่ การเล่นเกม และสื่อภาพยนตร์</p>
-            </div>
-        </section>
-    </main>
+        <div class="tech-circle">
+            <div class="profile-glow"></div>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-info">
-                <h3>วิชญาพร อภิชัย (แพม)</h3>
-                <p>นักเรียนชั้นมัธยมศึกษาปีที่ 3/2 | โรงเรียนจอมทอง</p>
-            </div>
-            <div class="footer-links">
-                <a href="index.html">หน้าแรก</a>
-                <a href="profile.html">ประวัติ</a>
-                <a href="education.html">การศึกษา</a>
-                <a href="hobby.html">งานอดิเรก</a>
-                <a href="contact.html">ติดต่อ</a>
-            </div>
+            <img src="https://placehold.co/500x600/111827/ffffff?text=PROFILE"
+                 alt="รูปโปรไฟล์ของฉัน">
+
+            <div class="floating-badge badge1">💻</div>
+            <div class="floating-badge badge2">🎮</div>
+            <div class="floating-badge badge3">🎵</div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Vichayaporn Apichai. All Rights Reserved. Computer Science Project.</p>
+
+        <div class="animal animal1">🦋</div>
+        <div class="animal animal2">🐬</div>
+    </div>
+
+</section>
+
+<section class="section">
+    <div class="section-title">
+        <p>MY DIGITAL WORLD</p>
+        <h2>Welcome To My Portfolio 🌈</h2>
+    </div>
+
+    <div class="feature-grid">
+
+        <div class="feature-card rainbow-card">
+            <span class="big-icon">👩‍🎓</span>
+            <h3>About Me</h3>
+            <p>ทำความรู้จักกับตัวฉันและข้อมูลส่วนตัว</p>
+            <a href="profile.html">Explore →</a>
         </div>
-    </footer>
+
+        <div class="feature-card">
+            <span class="big-icon">🎓</span>
+            <h3>Education</h3>
+            <p>เส้นทางการศึกษาและสิ่งที่ฉันสนใจในการเรียน</p>
+            <a href="education.html">Explore →</a>
+        </div>
+
+        <div class="feature-card">
+            <span class="big-icon">🎮</span>
+            <h3>My Hobbies</h3>
+            <p>เกม กีฬา เพลง ภาพยนตร์ และสิ่งที่ฉันชอบ</p>
+            <a href="hobby.html">Explore →</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="quote-section">
+    <div class="quote-box">
+        <span>✦</span>
+        <h2>"Dream big. Create your own colorful world."</h2>
+        <p>ทุกความฝันสามารถเริ่มต้นจากสิ่งเล็ก ๆ ได้</p>
+        <span>✦</span>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="footer-logo">W♡</div>
+    <h3>Wichayaporn Portfolio</h3>
+    <p>วิชญาพร อภิชัย • ม.3/2</p>
+
+    <div class="footer-links">
+        <a href="index.html">หน้าแรก</a>
+        <a href="profile.html">Profile</a>
+        <a href="education.html">Education</a>
+        <a href="hobby.html">Hobby</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <p class="copyright">© 2026 My Rainbow Portfolio</p>
+</footer>
+
 </body>
 </html>
