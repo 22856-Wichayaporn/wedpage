@@ -1,167 +1,139 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="th">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>VICHYAPORN — ผลงาน</title>
-
-    <link rel="stylesheet" href="css/style.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การศึกษา - Pam's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
+    <div class="floating-cyber-animal">
+        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 250, 100 C 350, 80 450, 180 420, 280 C 390, 380 280, 420 180, 390 C 80, 360 50, 240 100, 150 C 150, 60 200, 120 250, 100 Z" fill="url(#rainbow-grad)" opacity="0.35"/>
+            <defs>
+                <linearGradient id="rainbow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ff007f" />
+                    <stop offset="25%" stop-color="#7f00ff" />
+                    <stop offset="50%" stop-color="#00d4ff" />
+                    <stop offset="75%" stop-color="#00ff87" />
+                    <stop offset="100%" stop-color="#ff007f" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
 
-    <div class="bg"></div>
-    <div class="stars"></div>
+    <header>
+        <nav class="navbar">
+            <div class="logo">PAM<span>.DEV</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="profile.html">ประวัติส่วนตัว</a></li>
+                <li><a href="education.html" class="active">การศึกษา</a></li>
+                <li><a href="hobby.html">งานอดิเรก</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div id="fx"></div>
-
-    <div class="cursor"></div>
-    <div class="cursor-dot"></div>
-
-
-    <nav>
-
-        <a class="logo" href="index.html">
-            ✦ <b>VICHYAPORN</b>
-        </a>
-
-
-        <div class="navlinks">
-
-            <a href="index.html">
-                ⌂ หน้าแรก
-            </a>
-
-            <a href="profile.html">
-                ◈ ประวัติส่วนตัว
-            </a>
-
-            <a href="works.html">
-                ⚡ ผลงาน
-            </a>
-
-            <a href="games.html">
-                🎮 เกม
-            </a>
-
-            <a href="gallery.html">
-                🖼 แกลเลอรี
-            </a>
-
-            <a href="contact.html">
-                ✦ ติดต่อ
-            </a>
-
+    <main class="page-container">
+        <div class="page-header">
+            <h1 class="rainbow-text">ประวัติการศึกษา (Education)</h1>
+            <p>เส้นทางการศึกษาตั้งแต่ระดับประถมศึกษาจนถึงปัจจุบัน</p>
         </div>
 
-    </nav>
-
-
-    <main>
-
-        <section>
-
-            <div class="wrap">
-
-                <h1 class="title reveal">
-
-                    MY
-
-                    <span>
-                        WORKS
-                    </span>
-
-                </h1>
-
-
-                <div class="project card reveal">
-
-
-                    <div class="visual">
-
-                        💻✨
-
-                    </div>
-
-
-                    <div class="info">
-
-                        <div class="eyebrow">
-                            PROJECT 01
-                        </div>
-
-
-                        <h2>
-                            Neon Portfolio
-                        </h2>
-
-
-                        <p>
-                            เว็บไซต์ Portfolio
-                            ธีมอวกาศที่ผสม
-                            Glassmorphism,
-                            Neon Glow,
-                            Interactive Cursor
-                            และ Particle Effects
-                        </p>
-
-
-                        <div class="tags">
-
-                            <span class="tag">
-                                HTML
-                            </span>
-
-                            <span class="tag">
-                                CSS
-                            </span>
-
-                            <span class="tag">
-                                JavaScript
-                            </span>
-
-                            <span class="tag">
-                                Animation
-                            </span>
-
-                        </div>
-
-
-                        <a class="btn primary"
-                           href="gallery.html">
-
-                            ดูแกลเลอรี →
-
-                        </a>
-
-                    </div>
-
+        <section class="timeline-container">
+            <div class="timeline-item left">
+                <div class="timeline-content glass-card">
+                    <span class="timeline-date">ระดับประถมศึกษา</span>
+                    <h2>โรงเรียนประถมศึกษา</h2>
+                    <p>สำเร็จการศึกษาชั้นประถมศึกษาปีที่ 1 - 6 ด้วยผลการเรียนที่ดีเยี่ยม และร่วมกิจกรรมของโรงเรียนอย่างสม่ำเสมอ</p>
                 </div>
-
             </div>
-
+            <div class="timeline-item right">
+                <div class="timeline-content glass-card">
+                    <span class="timeline-date">ระดับมัธยมศึกษาตอนต้น (ม.1 - ม.2)</span>
+                    <h2>โรงเรียนจอมทอง</h2>
+                    <p>เข้าศึกษาต่อในระดับมัธยมศึกษาตอนต้น ได้เรียนรู้ทักษะพื้นฐานทั้งด้านวิชาการ การคิดวิเคราะห์ และกิจกรรมกลุ่ม</p>
+                </div>
+            </div>
+            <div class="timeline-item left active-step">
+                <div class="timeline-content glass-card">
+                    <span class="timeline-date">ปัจจุบัน (ม.3)</span>
+                    <h2>โรงเรียนจอมทอง (ชั้น ม.3/2)</h2>
+                    <p>กำลังศึกษาอยู่ในชั้นมัธยมศึกษาปีที่ 3/2 มุ่งเน้นการเรียนวิชาคณิตศาสตร์และคอมพิวเตอร์ เพื่อเตรียมตัวเข้าสู่ระดับมัธยมศึกษาตอนปลาย</p>
+                </div>
+            </div>
         </section>
 
+        <section class="edu-highlights">
+            <div class="highlight-card glass-card">
+                <h3>🏫 โรงเรียนปัจจุบัน</h3>
+                <p>โรงเรียนจอมทอง จ.เชียงใหม่</p>
+            </div>
+            <div class="highlight-card glass-card">
+                <h3>📚 ระดับชั้น</h3>
+                <p>มัธยมศึกษาปีที่ 3/2</p>
+            </div>
+            <div class="highlight-card glass-card">
+                <h3>⭐ วิชาที่ชอบที่สุด</h3>
+                <p>คณิตศาสตร์ (Mathematics)</p>
+            </div>
+        </section>
+
+        <section class="table-section glass-card">
+            <h2>ตารางสรุปข้อมูลการศึกษา</h2>
+            <div class="table-wrapper">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>ระดับการศึกษา</th>
+                            <th>สถานศึกษา</th>
+                            <th>จังหวัด</th>
+                            <th>สถานะ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ประถมศึกษา</td>
+                            <td>โรงเรียนประถมศึกษา</td>
+                            <td>เชียงใหม่</td>
+                            <td><span class="status-badge completed">สำเร็จการศึกษา</span></td>
+                        </tr>
+                        <tr>
+                            <td>มัธยมศึกษาตอนต้น (ม.1-ม.2)</td>
+                            <td>โรงเรียนจอมทอง</td>
+                            <td>เชียงใหม่</td>
+                            <td><span class="status-badge completed">สำเร็จการศึกษา</span></td>
+                        </tr>
+                        <tr>
+                            <td>มัธยมศึกษาตอนต้น (ม.3)</td>
+                            <td>โรงเรียนจอมทอง (ห้อง 3/2)</td>
+                            <td>เชียงใหม่</td>
+                            <td><span class="status-badge current">กำลังศึกษา</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
     </main>
 
-
     <footer>
-
-        ✦ VICHYAPORN APICHAI
-        • NEON DIGITAL UNIVERSE ✦
-
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>วิชญาพร อภิชัย (แพม)</h3>
+                <p>นักเรียนชั้นมัธยมศึกษาปีที่ 3/2 | โรงเรียนจอมทอง</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">หน้าแรก</a>
+                <a href="profile.html">ประวัติ</a>
+                <a href="education.html">การศึกษา</a>
+                <a href="hobby.html">งานอดิเรก</a>
+                <a href="contact.html">ติดต่อ</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Vichayaporn Apichai. All Rights Reserved. Computer Science Project.</p>
+        </div>
     </footer>
-
-
-    <script src="js/app.js"></script>
-
 </body>
-
 </html>
