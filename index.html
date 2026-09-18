@@ -1,155 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="th">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>VICHYAPORN — หน้าแรก</title>
-
-    <link rel="stylesheet" href="css/style.css">
+    <title>หน้าแรก - Pam's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <div class="floating-cyber-animal">
+        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 250, 100 C 350, 80 450, 180 420, 280 C 390, 380 280, 420 180, 390 C 80, 360 50, 240 100, 150 C 150, 60 200, 120 250, 100 Z" fill="url(#rainbow-grad)" opacity="0.35"/>
+            <defs>
+                <linearGradient id="rainbow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ff007f" />
+                    <stop offset="25%" stop-color="#7f00ff" />
+                    <stop offset="50%" stop-color="#00d4ff" />
+                    <stop offset="75%" stop-color="#00ff87" />
+                    <stop offset="100%" stop-color="#ff007f" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
 
-    <!-- Background -->
-    <div class="bg"></div>
-    <div class="stars"></div>
-
-    <!-- เอฟเฟกต์ทั้งหมด -->
-    <div id="fx"></div>
-
-    <!-- Cursor -->
-    <div class="cursor"></div>
-    <div class="cursor-dot"></div>
-
-
-    <!-- ================= NAVBAR ================= -->
-
-    <nav>
-
-        <a class="logo" href="index.html">
-            ✦ <b>VICHYAPORN</b>
-        </a>
-
-        <div class="navlinks">
-
-            <a href="index.html">
-                ⌂ หน้าแรก
-            </a>
-
-            <a href="profile.html">
-                ◈ ประวัติส่วนตัว
-            </a>
-
-            <a href="works.html">
-                ⚡ ผลงาน
-            </a>
-
-            <a href="games.html">
-                🎮 เกม
-            </a>
-
-            <a href="gallery.html">
-                🖼 แกลเลอรี
-            </a>
-
-            <a href="contact.html">
-                ✦ ติดต่อ
-            </a>
-
-        </div>
-
-    </nav>
-
-
-    <!-- ================= HERO ================= -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">PAM<span>.DEV</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">หน้าแรก</a></li>
+                <li><a href="profile.html">ประวัติส่วนตัว</a></li>
+                <li><a href="education.html">การศึกษา</a></li>
+                <li><a href="hobby.html">งานอดิเรก</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
-
-        <section class="hero">
-
-            <div class="wrap reveal">
-
-                <div class="eyebrow">
-                    ✦ VICHYAPORN DIGITAL UNIVERSE ✦
+        <section class="hero-container">
+            <div class="hero-content">
+                <span class="badge">✨ Welcome to my Cyber Space</span>
+                <h1>สวัสดีค่ะ! ฉันชื่อ <br><span class="rainbow-text">วิชญาพร อภิชัย</span></h1>
+                <p class="subtitle">นักเรียนชั้น ม.3/2 โรงเรียนจอมทอง | ผู้มีความสนใจในด้านเทคโนโลยี คณิตศาสตร์ และการสร้างสรรค์สิ่งใหม่ๆ</p>
+                <div class="cta-group">
+                    <a href="profile.html" class="btn btn-primary">รู้จักฉันมากขึ้น 🚀</a>
+                    <a href="hobby.html" class="btn btn-secondary">ดูงานอดิเรกของฉัน 🎮</a>
                 </div>
-
-
-                <h1>
-
-                    <span class="glitch">
-                        VICHYAPORN
-                    </span>
-
-                    <br>
-
-                    APICHAI
-
-                </h1>
-
-
-                <div class="subtitle">
-
-                    Student • Creator •
-
-                    <span id="type" class="type"></span>
-
-                </div>
-
-
-                <p>
-                    ยินดีต้อนรับเข้าสู่โลกส่วนตัวของฉัน —
-                    เว็บไซต์พอร์ตโฟลิโอธีมจักรวาล Neon
-                    ที่เต็มไปด้วยสัตว์น่ารัก แสงสี
-                    และเอฟเฟกต์แบบจัดเต็ม
-                </p>
-
-
-                <div class="buttons">
-
-                    <a class="btn primary" href="profile.html">
-                        ✦ สำรวจโปรไฟล์
-                    </a>
-
-                    <a class="btn" href="works.html">
-                        ⚡ ดูผลงาน
-                    </a>
-
-                </div>
-
             </div>
-
-
-            <!-- สัตว์ลอย -->
-
-            <div class="floatpet p1">
-                🐱
+            <div class="hero-image-wrapper">
+                <div class="glowing-ring"></div>
+                <img src="https://placehold.co/400x400/0d47a1/ffffff?text=PAM+PROFILE" alt="รูปโปรไฟล์ของวิชญาพร อภิชัย" class="profile-img">
             </div>
-
-            <div class="floatpet p2">
-                🦊
-            </div>
-
-            <div class="floatpet p3">
-                🦄
-            </div>
-
         </section>
 
+        <section class="features-grid">
+            <div class="card glass-card">
+                <div class="card-icon">🎓</div>
+                <h3>การศึกษา</h3>
+                <p>ชั้นมัธยมศึกษาปีที่ 3/2 โรงเรียนจอมทอง จ.เชียงใหม่</p>
+            </div>
+            <div class="card glass-card">
+                <div class="card-icon">📐</div>
+                <h3>วิชาที่ชอบ</h3>
+                <p>มีความชื่นชอบและถนัดในรายวิชาคณิตศาสตร์</p>
+            </div>
+            <div class="card glass-card">
+                <div class="card-icon">💻</div>
+                <h3>ความสนใจ</h3>
+                <p>หลงใหลในเทคโนโลยีสมัยใหม่ การเล่นเกม และสื่อภาพยนตร์</p>
+            </div>
+        </section>
     </main>
 
-
     <footer>
-
-        ✦ VICHYAPORN APICHAI
-        • NEON DIGITAL UNIVERSE ✦
-
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>วิชญาพร อภิชัย (แพม)</h3>
+                <p>นักเรียนชั้นมัธยมศึกษาปีที่ 3/2 | โรงเรียนจอมทอง</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">หน้าแรก</a>
+                <a href="profile.html">ประวัติ</a>
+                <a href="education.html">การศึกษา</a>
+                <a href="hobby.html">งานอดิเรก</a>
+                <a href="contact.html">ติดต่อ</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Vichayaporn Apichai. All Rights Reserved. Computer Science Project.</p>
+        </div>
     </footer>
-
-
-    <script src="js/app.js"></script>
-
 </body>
-
 </html>
