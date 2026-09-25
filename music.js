@@ -3,7 +3,7 @@
 // =====================================
 
 // 🎵 ใส่ชื่อไฟล์เพลงของคุณตรงนี้
-const music = new Audio("");
+const music = new Audio("ILLSLICK%20%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%20Official%20Music%20Video.mp3");
 
 music.loop = true;
 music.volume = 0.5;
