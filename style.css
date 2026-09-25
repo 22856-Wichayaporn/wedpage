@@ -1836,4 +1836,93 @@ footer p {
         animation-iteration-count: 1 !important;
         scroll-behavior: auto !important;
     }
+    
+}
+/* =====================================
+   MUSIC PLAYER
+===================================== */
+
+#musicBox {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    width: 230px;
+    padding: 18px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    border: 1px solid #efd6e9;
+    border-radius: 25px;
+
+    box-shadow: 0 10px 35px rgba(120, 80, 130, 0.18);
+
+    backdrop-filter: blur(10px);
+
+    z-index: 9999;
+}
+
+.music-title {
+    text-align: center;
+
+    color: #9c508b;
+
+    font-family: 'Itim', cursive;
+
+    font-size: 20px;
+
+    margin-bottom: 12px;
+}
+
+.music-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.music-buttons button {
+    flex: 1;
+
+    border: none;
+
+    padding: 10px 8px;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #c96db2,
+        #8d78d8
+    );
+
+    color: white;
+
+    font-family: 'Kanit', sans-serif;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.music-buttons button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 6px 15px rgba(150, 100, 180, 0.25);
+}
+
+@media (max-width: 600px) {
+
+    #musicBox {
+        right: 15px;
+        bottom: 15px;
+        width: 205px;
+    }
+
+    .music-title {
+        font-size: 18px;
+    }
+
+    .music-buttons button {
+        font-size: 12px;
+    }
 }
