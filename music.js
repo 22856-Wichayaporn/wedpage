@@ -3,7 +3,7 @@
 // =====================================
 
 // 🎵 ใส่ชื่อไฟล์เพลงของคุณตรงนี้
-const music = new Audio("music.mp3");
+const music = new Audio("");
 
 music.loop = true;
 music.volume = 0.5;
